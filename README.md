@@ -19,7 +19,6 @@ RUNTIME        : Caffeine Dependent Loop Enabled
   <table>
     <tr>
       <td width="80%">
-        <h4>SYSTEMS UNDER CONSTRUCTION</h4>
         <p>
           <b>MOBILE SYSTEMS RESEARCH</b><br/>
           Fokus pada <code>Native Interop</code> dan <code>Surgical Hardware Control</code>. 
