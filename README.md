@@ -2,43 +2,42 @@
   <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/header.svg" width="100%" />
 </div>
 
+# // Muhammad Irsyad Fachryanto
+## [ THE_ARCHITECT ] // SEMESTER_06_STABLE
+
+```text
+[SYSTEM_SPECIFICATIONS]
+-----------------------------------------------------------------------
+CORE_NAME      : Muhammad Irsyad Fachryanto
+VERSION_STATE  : D4_Teknik_Informatika // Semester_06
+INTEGRITY      : 3.92 / 4.00 (High_Performance_Academic_Node)
+BOOT_SEQUENCE  : 0x01_FLUTTER -> 0x02_KOTLIN -> 0x03_NEXTJS
+SYSTEM_UPTIME  : CAFFEINE_DEPENDENT_LOOP_ENABLED
+-----------------------------------------------------------------------
+```
+
 <div align="center">
   <table>
     <tr>
       <td width="70%">
-        <h1>M. IRSYAD FACHRYANTO</h1>
+        <h3>[ SYSTEMS_UNDER_CONSTRUCTION ]</h3>
         <p>
-          <b>Aspiring Mobile Architect | Software Engineering Researcher</b><br/>
-          Fokus pada pengembangan sistem mobile yang tangguh dengan implementasi arsitektur perangkat lunak yang skalabel (Clean Architecture & SOLID).
+          <b>MOBILE_SYSTEMS_RESEARCH</b><br/>
+          Fokus pada <code>Native_Interop</code> dan <code>Surgical_Hardware_Control</code>. 
+          Riset aktif: Bypass limitasi standar OS untuk integritas <code>Kiosk_Mode</code> dan <code>Secure_Window</code> rendering.
         </p>
         <p>
-          🔭 Status: <b>Semester 6 (D4 Teknik Informatika)</b><br/>
-          🌱 GPA: <b>3.92 / 4.00 (Academic Performance)</b><br/>
-          ⚡ Focus: <b>Flutter Native, Kotlin Interop, & Security Systems.</b>
+          <b>WEB_KERNEL_MODIFICATION</b><br/>
+          Arsitektur <code>Next.js_16</code> dengan efisiensi <code>Turbopack</code>. 
+          Ekspertise: Sistem monitoring <code>Firestore</code> real-time dan mekanisme <code>AES-256</code> state recovery.
         </p>
       </td>
       <td width="30%" align="center">
         <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/pet.svg" width="150" /><br/>
-        <sub><b>SYSTEM_SENTINEL [V1.0]</b><br/>Mascot pendamping riset sistem.</sub>
+        <sub><b>SYSTEM_SENTINEL [V6.0]</b><br/>Deep Learning Assistant.</sub>
       </td>
     </tr>
   </table>
-</div>
-
----
-
-### // KERNEL_TERMINAL_EXPLORER
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/it_playhouse.svg" width="100%" />
-</div>
-
----
-
-### // SYSTEM_VISUALIZER
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/visuals.svg" width="100%" />
 </div>
 
 ---
@@ -51,29 +50,22 @@
 
 ---
 
-### // PRODUCTION_LOGBOOK
+### // OPERATIONAL_VITAL_SIGNS
+```text
+[ ENERGY_LEVEL ] [||||||||||||||||||||] 100% (CAFFEINE_OVERLOAD)
+[ SLEEP_CYCLES ] [||                  ] 10%  (SYSTEM_DEBT)
+[ STRESS_LOAD  ] [||||||||||          ] 50%  (DEBUGGING_STABLE)
+[ PRODUCTIVITY ] [||||||||||||||||||  ] 90%  (OPTIMIZED)
+```
 
-<table border="0">
-  <tr>
-    <td width="33%">
-      <b>SECURE CBT MASTER</b><br/>
-      Sistem ujian anti-curang. Fokus pada keamanan device (Kiosk Mode) dan protokol komunikasi.
-    </td>
-    <td width="33%">
-      <b>GEGES SMART BARBER</b><br/>
-      SaaS manajemen barbershop. Implementasi penjadwalan dan sinkronisasi real-time.
-    </td>
-    <td width="33%">
-      <b>GHOST LINUX V4.0</b><br/>
-      Engineering lingkungan Linux. Fokus pada performa sistem dan estetika otomasi.
-    </td>
-  </tr>
-  <tr>
-    <td width="33%"><code>Flutter</code> <code>Kotlin</code> <code>Firebase</code></td>
-    <td width="33%"><code>Flutter</code> <code>Clean Arch</code> <code>NoSQL</code></td>
-    <td width="33%"><code>Bash</code> <code>Python</code> <code>Systemd</code></td>
-  </tr>
-</table>
+---
+
+### // DEPLOYMENT_LOGS
+- `[INFO]` Initializing academic_state: 3.92 GPA detected.
+- `[DEBUG]` Searching for social_life.exe... Error: Module not found.
+- `[SUCCESS]` Berhasil memperbaiki 1 bug. 42 bug baru otomatis bergabung ke party.
+- `[WARN]` Clock drift terdeteksi: Sesi coding jam 3 pagi tidak sinkron dengan realita.
+- `[INFO]` sudo rm -rf /procrastination --no-preserve-root
 
 ---
 
@@ -85,14 +77,13 @@
 
 ---
 
-### // ESTABLISH_COMMUNICATION
-
-<div align="center">
-  <a href="https://wa.me/6285865826621"><b>WHATSAPP</b></a> | 
-  <a href="mailto:irsydfchrynto@gmail.com"><b>EMAIL</b></a> | 
-  <a href="https://linkedin.com/in/mirsydfchrynto"><b>LINKEDIN</b></a> | 
-  <a href="https://irsyad-architect.surge.sh"><b>PORTFOLIO</b></a>
-</div>
+### // ACCESS_TERMINAL
+```bash
+# Handshake with the architect
+$ curl -X GET https://irsyad-architect.surge.sh
+$ mailto:irsydfchrynto@gmail.com
+$ git commit -m "feat: building future systems"
+```
 
 ---
 
