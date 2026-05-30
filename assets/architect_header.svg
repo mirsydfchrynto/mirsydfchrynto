@@ -1,0 +1,47 @@
+<svg fill="none" viewBox="0 0 800 320" width="800" height="320" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="320" fill="#050505"/>
+  <defs>
+    <pattern id="dotGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.5" fill="#ffffff" fill-opacity="0.05"/>
+    </pattern>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f43f5e" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#f43f5e" stop-opacity="1"/>
+      <stop offset="1" stop-color="#f43f5e" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="320" fill="url(#dotGrid)"/>
+
+  <!-- Orbital Systems (Procedural Motion) -->
+  <g opacity="0.3">
+    <circle cx="400" cy="160" r="120" stroke="#111" stroke-width="1"/>
+    <circle cx="400" cy="160" r="80" stroke="#222" stroke-width="1"/>
+    <circle cx="400" cy="160" r="4" fill="#f43f5e">
+      <animateMotion dur="10s" repeatCount="indefinite" path="M -80 0 A 80 80 0 1 1 80 0 A 80 80 0 1 1 -80 0" />
+    </circle>
+  </g>
+
+  <!-- Typography: The Core -->
+  <text x="50%" y="48%" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="40" font-weight="900" fill="#fff" letter-spacing="-0.06em">
+    M. IRSYAD FACHRYANTO
+  </text>
+  
+  <text x="50%" y="60%" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#444" letter-spacing="0.5em" font-weight="600">
+    SYSTEM AUTHOR / OPERATIONAL ARCHITECT
+  </text>
+
+  <!-- Status Indicators -->
+  <g transform="translate(300, 240)">
+    <rect width="200" height="20" rx="4" fill="#0a0a0a" stroke="#1a1a1a"/>
+    <rect width="184" height="2" x="8" y="9" fill="#111" rx="1"/>
+    <rect width="160" height="2" x="8" y="9" fill="#f43f5e" rx="1">
+      <animate attributeName="width" values="0;160;140;160" dur="4s" repeatCount="indefinite" />
+    </rect>
+    <text x="100" y="35" text-anchor="middle" font-family="ui-monospace, monospace" font-size="7" fill="#333" letter-spacing="0.1em">SYSTEM_INTEGRITY_INDEX: 0.982</text>
+  </g>
+
+  <!-- Corner Brackets -->
+  <path d="M20 20 L40 20 M20 20 L20 40" stroke="#222" stroke-width="1.5"/>
+  <path d="M760 20 L780 20 M780 20 L780 40" stroke="#222" stroke-width="1.5"/>
+</svg>
