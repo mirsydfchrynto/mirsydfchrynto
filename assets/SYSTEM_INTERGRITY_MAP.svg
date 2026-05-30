@@ -1,0 +1,32 @@
+<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#000"/>
+  <g stroke="#1a1a1a" stroke-width="1" stroke-dasharray="2 2">
+    <circle cx="400" cy="200" r="150" />
+    <circle cx="400" cy="200" r="100" />
+    <circle cx="400" cy="200" r="50" />
+  </g>
+  <g font-family="ui-monospace, monospace" text-anchor="middle">
+    <text x="400" y="205" fill="#fff" font-size="14" font-weight="700">M. IRSYAD</text>
+    
+    <g transform="translate(400, 100)">
+      <rect x="-60" y="-10" width="120" height="20" fill="#000" stroke="#f43f5e"/>
+      <text y="4" fill="#f43f5e" font-size="10">MOBILE_SECURITY</text>
+    </g>
+    
+    <g transform="translate(550, 200)">
+      <rect x="-60" y="-10" width="120" height="20" fill="#000" stroke="#333"/>
+      <text y="4" fill="#fff" font-size="10">DISTRIBUTED_SYNC</text>
+    </g>
+    
+    <g transform="translate(400, 300)">
+      <rect x="-60" y="-10" width="120" height="20" fill="#000" stroke="#333"/>
+      <text y="4" fill="#fff" font-size="10">NOSQL_TUNING</text>
+    </g>
+    
+    <g transform="translate(250, 200)">
+      <rect x="-60" y="-10" width="120" height="20" fill="#000" stroke="#333"/>
+      <text y="4" fill="#fff" font-size="10">NATIVE_INTEROP</text>
+    </g>
+  </g>
+  <path d="M400 110 L400 150 M540 200 L500 200 M400 290 L400 250 M260 200 L300 200" stroke="#f43f5e" stroke-width="1"/>
+</svg>

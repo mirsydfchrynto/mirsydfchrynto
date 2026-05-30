@@ -1,0 +1,18 @@
+<svg fill="none" viewBox="0 0 800 120" width="800" height="120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="120" fill="#000" stroke="#111"/>
+  <g transform="translate(30, 40)" font-family="ui-monospace, monospace">
+    <text y="0" fill="#666" font-size="8">CURRENT_OPERATIONAL_STATE</text>
+    <g transform="translate(0, 25)">
+      <text y="0" fill="#333" font-size="7">RESEARCH</text>
+      <text y="15" fill="#fff" font-size="11">Offline-First Consistency Models</text>
+    </g>
+    <g transform="translate(250, 25)">
+      <text y="0" fill="#333" font-size="7">BOTTLENECK</text>
+      <text y="15" fill="#f43f5e" font-size="11">Firestore Composite Index Propagation</text>
+    </g>
+    <g transform="translate(550, 25)">
+      <text y="0" fill="#333" font-size="7">ACTIVE_BUILD</text>
+      <text y="15" fill="#fff" font-size="11">Native-to-Web Sync Bridge</text>
+    </g>
+  </g>
+</svg>
