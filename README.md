@@ -1,15 +1,5 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/render?type=rect&color=0d1117&height=120&section=header&text=SYSTEM%20ARCHITECT%20%2F%20MOBILE%20ENGINEER&fontSize=40&fontAlignY=50&animation=fadeIn&fontColor=F43F5E&desc=PRECISION%20ENGINEERING%20AND%20SCALABLE%20SOLUTIONS&descSize=12&descAlignY=70" width="100%" />
-</div>
-
-<div align="center">
-  <br />
-  <h1 align="center">M. IRSYAD FACHRYANTO</h1>
-  <p align="center">
-    <b>Building High-Integrity Digital Ecosystems through Advanced Systems Architecture.</b>
-  </p>
-  <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=20&duration=3000&pause=1000&color=F43F5E&center=true&vCenter=true&width=600&lines=MOBILE+SYSTEMS+ARCHITECT;FLUTTER+ENGINEERING+SPECIALIST;SOFTWARE+ARCHITECTURE+RESEARCHER;LINUX+ENVIRONMENT+DESIGNER" alt="Typing SVG" />
-</div>
+# M. IRSYAD FACHRYANTO
+## Mobile Systems Architect | Software Engineering Specialist
 
 ---
 
@@ -20,28 +10,6 @@ Mahasiswa D4 Teknik Informatika dengan fokus pada pembangunan sistem mobile yang
 *   **Engineering Role:** Aspiring Mobile Systems Architect
 *   **System Status:** Active | Semester 6 | GPA 3.92 / 4.00
 *   **Operational Scope:** Native Systems, Security Infrastructure, and Distributed Systems.
-
----
-
-### // SYSTEM_TELEMETRY (REAL-TIME)
-
-<div align="center">
-  <table border="0">
-    <tr>
-      <td><img src="https://github-readme-stats.vercel.app/api?username=mirsydfchrynto&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=F43F5E&icon_color=F43F5E&text_color=c9d1d9&border_radius=10" height="180" /></td>
-      <td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mirsydfchrynto&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=F43F5E&text_color=c9d1d9&border_radius=10" height="180" /></td>
-    </tr>
-  </table>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mirsydfchrynto&theme=radical&hide_border=true&background=0d1117&ring=F43F5E&fire=F43F5E&currStreakLabel=F43F5E&border_radius=10" width="100%" />
-</div>
-
----
-
-### // CONTRIBUTION_SNAKE_MATRIX
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution Snake" />
-</div>
 
 ---
 
@@ -98,6 +66,5 @@ Mahasiswa D4 Teknik Informatika dengan fokus pada pembangunan sistem mobile yang
 ---
 
 <div align="center">
-  <sub>© 2026 M. IRSYAD FACHRYANTO // ENGINEERED FOR SUPREMACY.</sub><br/>
-  <img src="https://komarev.com/ghpvc/?username=mirsydfchrynto&color=F43F5E&style=flat-square&label=TOTAL_SYSTEM_ACCESS" />
+  <sub>© 2026 M. IRSYAD FACHRYANTO // ENGINEERED FOR SUPREMACY.</sub>
 </div>
