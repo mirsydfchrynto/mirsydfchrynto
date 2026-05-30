@@ -1,55 +1,93 @@
-# Muhammad Irsyad Fachryanto
-**Architecting system integrity under constraints.**
-
----
-
-### // SYSTEM_MAP
-<img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/SYSTEM_MAP.svg" width="100%" />
-
----
-
-### // LIVE_ENGINEERING_STATE
-<img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/LIVE_STATE.svg" width="100%" />
-
----
-
-### // FAILURE_ARCHIVE
-<img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/FAILURE_ARCHIVE.svg" width="100%" />
-
----
-
-### // ARCHITECTURE_DEEP_IVE: SECURE_CBT
-<img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/CBT_BLUEPRINT.svg" width="100%" />
-
-#### The Core Logic
-I built the Secure CBT system to solve a specific problem: students bypassing browser-based exam locks. 
-- **The Kotlin Bridge:** Instead of relying on Dart-level listeners, I used `startLockTask()` to request the OS to pin the application.
-- **Hardware Control:** `FLAG_SECURE` was implemented at the window level to ensure that screenshot attempts return a zero-byte black image.
-- **Time Integrity:** To prevent students from changing their device clock to gain extra time, I implemented a network handshake that compares `FieldValue.serverTimestamp()` with local UTC time to calculate drift.
-
----
-
-### // SYSTEM_THINKING
-- **Complexity Choice:** I pull in native complexity (Kotlin/MethodChannels) when OS-level security is non-negotiable. I reject it when a simple in-memory sort can replace a complex DB query.
-- **Abstraction Policy:** If an abstraction hides the lifecycle of the underlying process, I avoid it. I prefer building my own bridges over using generic, heavy plugins.
-- **Design Philosophy:** Design exists to communicate state. In my UIs, high-contrast typography and real-time status indicators take priority over decorative assets.
-
----
-
-### // THE_NOW_OPERATING_SYSTEM
-- **Currently Building:** Native-to-web synchronization bridge for a distributed dashboard.
-- **Currently Learning:** Procedural motion logic to reduce cognitive load in dense data views.
-- **Current Research:** [Offline-First Consistency Models](./research/01_offline_consistency.md).
-
----
-
-### // ACCESS_POINTS
-- [NOW.md](./NOW.md) - Monthly status update.
-- [/research](./research) - Engineering notebooks and experiments.
-- [Portfolio](https://irsyad-architect.surge.sh) - Visual deployment log.
-- [Email](mailto:irsydfchrynto@gmail.com) - Correspondence.
-
----
 <div align="center">
-  <sub>M. IRSYAD FACHRYANTO // PUBLIC_ENGINEERING_OS_V1.0 // 2026</sub>
+  <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/header.svg" width="100%" />
+</div>
+
+# // Muhammad Irsyad Fachryanto
+## [ THE_ARCHITECT ] // SEMESTER_06_STABLE
+
+```text
+[SYSTEM_SPECIFICATIONS]
+-----------------------------------------------------------------------
+CORE_NAME      : Muhammad Irsyad Fachryanto
+VERSION_STATE  : D4_Teknik_Informatika // Semester_06
+INTEGRITY      : 3.92 / 4.00 (High_Performance_Academic_Node)
+BOOT_SEQUENCE  : 0x01_FLUTTER -> 0x02_KOTLIN -> 0x03_NEXTJS
+SYSTEM_UPTIME  : CAFFEINE_DEPENDENT_LOOP_ENABLED
+-----------------------------------------------------------------------
+```
+
+<div align="center">
+  <table>
+    <tr>
+      <td width="70%">
+        <h3>[ SYSTEMS_UNDER_CONSTRUCTION ]</h3>
+        <p>
+          <b>MOBILE_SYSTEMS_RESEARCH</b><br/>
+          Fokus pada <code>Native_Interop</code> dan <code>Surgical_Hardware_Control</code>. 
+          Riset aktif: Bypass limitasi standar OS untuk integritas <code>Kiosk_Mode</code> dan <code>Secure_Window</code> rendering.
+        </p>
+        <p>
+          <b>WEB_KERNEL_MODIFICATION</b><br/>
+          Arsitektur <code>Next.js_16</code> dengan efisiensi <code>Turbopack</code>. 
+          Ekspertise: Sistem monitoring <code>Firestore</code> real-time dan mekanisme <code>AES-256</code> state recovery.
+        </p>
+      </td>
+      <td width="30%" align="center">
+        <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/pet.svg" width="150" /><br/>
+        <sub><b>SYSTEM_SENTINEL [V6.0]</b><br/>Deep Learning Assistant.</sub>
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
+### // TECHNICAL_ARSENAL
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=dart,flutter,kotlin,nextjs,ts,py,firebase,supabase,linux,git,docker,figma" />
+</div>
+
+---
+
+### // OPERATIONAL_VITAL_SIGNS
+```text
+[ ENERGY_LEVEL ] [||||||||||||||||||||] 100% (CAFFEINE_OVERLOAD)
+[ SLEEP_CYCLES ] [||                  ] 10%  (SYSTEM_DEBT)
+[ STRESS_LOAD  ] [||||||||||          ] 50%  (DEBUGGING_STABLE)
+[ PRODUCTIVITY ] [||||||||||||||||||  ] 90%  (OPTIMIZED)
+```
+
+---
+
+### // DEPLOYMENT_LOGS
+- `[INFO]` Initializing academic_state: 3.92 GPA detected.
+- `[DEBUG]` Searching for social_life.exe... Error: Module not found.
+- `[SUCCESS]` Berhasil memperbaiki 1 bug. 42 bug baru otomatis bergabung ke party.
+- `[WARN]` Clock drift terdeteksi: Sesi coding jam 3 pagi tidak sinkron dengan realita.
+- `[INFO]` sudo rm -rf /procrastination --no-preserve-root
+
+---
+
+### // CONTRIBUTION_SNAKE_MATRIX
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/output/github-contribution-grid-snake-dark.svg" width="100%" />
+</div>
+
+---
+
+### // ACCESS_TERMINAL
+```bash
+# Handshake with the architect
+$ curl -X GET https://irsyad-architect.surge.sh
+$ mailto:irsydfchrynto@gmail.com
+$ git commit -m "feat: building future systems"
+```
+
+---
+
+<div align="center">
+  <sub>© 2026 M. IRSYAD FACHRYANTO // ENGINEERED_FOR_STABILITY.</sub><br/>
+  <img src="https://komarev.com/ghpvc/?username=mirsydfchrynto&color=f43f5e&style=flat-square&label=VISITOR_LOG" />
 </div>
