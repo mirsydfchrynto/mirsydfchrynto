@@ -1,42 +1,46 @@
-<svg fill="none" viewBox="0 0 800 150" width="800" height="150" xmlns="http://www.w3.org/2000/svg">
-  <rect width="800" height="150" fill="#0d1117" rx="12" />
+<svg fill="none" viewBox="0 0 800 220" width="800" height="220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="220" fill="#0d1117" rx="12" stroke="#30363d"/>
   
   <style>
-    .badge { transition: transform 0.3s; }
-    .badge:hover { transform: scale(1.1); }
-    .title { fill: #f43f5e; font-family: monospace; font-size: 14px; font-weight: bold; }
-    .subtitle { fill: #8b949e; font-family: monospace; font-size: 10px; }
+    .stat-label { fill: #8b949e; font-family: monospace; font-size: 11px; text-transform: uppercase; }
+    .stat-value { fill: #f43f5e; font-family: monospace; font-size: 22px; font-weight: bold; }
+    .stat-desc { fill: #c9d1d9; font-family: sans-serif; font-size: 12px; }
+    .card { fill: #161b22; stroke: #30363d; }
+    @keyframes slideIn { from { transform: translateX(-20px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+    .anim { animation: slideIn 0.8s ease-out forwards; }
   </style>
 
-  <!-- Achievement 1: Flutter -->
-  <g class="badge" transform="translate(100, 75)">
-    <circle r="40" fill="#161b22" stroke="#f43f5e" stroke-width="2" />
-    <path d="M-15,-15 L15,0 L-15,15 L0,0 Z" fill="#f43f5e" />
-    <text y="60" text-anchor="middle" class="title">FLUTTER_ELITE</text>
-    <text y="75" text-anchor="middle" class="subtitle">180+ TESTS PASSED</text>
+  <!-- Title -->
+  <text x="20" y="35" font-family="monospace" font-size="14" font-weight="bold" fill="#f43f5e">ARCHITECTURE_PRODUCTION_METRICS [DATA_SYNC]</text>
+  <line x1="20" y1="45" x2="780" y2="45" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Metric 1: Flutter Tests -->
+  <g transform="translate(20, 70)" class="anim" style="animation-delay: 0.1s;">
+    <rect width="240" height="120" rx="8" class="card"/>
+    <text x="20" y="30" class="stat-label">Production Stability</text>
+    <text x="20" y="60" class="stat-value">180+ VERIFIED</text>
+    <text x="20" y="90" class="stat-desc">Unit & Widget Tests Passed</text>
+    <rect x="20" y="100" width="200" height="4" fill="#30363d" rx="2"/>
+    <rect x="20" y="100" width="190" height="4" fill="#f43f5e" rx="2"/>
   </g>
 
-  <!-- Achievement 2: GPA -->
-  <g class="badge" transform="translate(300, 75)">
-    <circle r="40" fill="#161b22" stroke="#f43f5e" stroke-width="2" />
-    <text x="0" y="8" text-anchor="middle" font-size="20" fill="#f43f5e" font-family="monospace">3.92</text>
-    <text y="60" text-anchor="middle" class="title">ACADEMIC_ARCHITECT</text>
-    <text y="75" text-anchor="middle" class="subtitle">GPA PERFORMANCE</text>
+  <!-- Metric 2: Academic GPA -->
+  <g transform="translate(280, 70)" class="anim" style="animation-delay: 0.3s;">
+    <rect width="240" height="120" rx="8" class="card"/>
+    <text x="20" y="30" class="stat-label">Academic Excellence</text>
+    <text x="20" y="60" class="stat-value">3.92 / 4.00</text>
+    <text x="20" y="90" class="stat-desc">D4 Teknik Informatika Score</text>
+    <rect x="20" y="100" width="200" height="4" fill="#30363d" rx="2"/>
+    <rect x="20" y="100" width="196" height="4" fill="#f43f5e" rx="2"/>
   </g>
 
-  <!-- Achievement 3: Architecture -->
-  <g class="badge" transform="translate(500, 75)">
-    <circle r="40" fill="#161b22" stroke="#f43f5e" stroke-width="2" />
-    <path d="M-15,10 L0,-20 L15,10 Z M-10,15 L10,15" stroke="#f43f5e" stroke-width="2" />
-    <text y="60" text-anchor="middle" class="title">SOLID_ENGINEER</text>
-    <text y="75" text-anchor="middle" class="subtitle">CLEAN ARCHITECTURE</text>
-  </g>
-
-  <!-- Achievement 4: Linux -->
-  <g class="badge" transform="translate(700, 75)">
-    <circle r="40" fill="#161b22" stroke="#f43f5e" stroke-width="2" />
-    <path d="M-10,0 Q0,-20 10,0 T0,20 T-10,0" fill="#f43f5e" />
-    <text y="60" text-anchor="middle" class="title">KERNEL_OPS</text>
-    <text y="75" text-anchor="middle" class="subtitle">LINUX CUSTOMIZATION</text>
+  <!-- Metric 3: Optimization -->
+  <g transform="translate(540, 70)" class="anim" style="animation-delay: 0.5s;">
+    <rect width="240" height="120" rx="8" class="card"/>
+    <text x="20" y="30" class="stat-label">Database Efficiency</text>
+    <text x="20" y="60" class="stat-value">70% OPTIMIZED</text>
+    <text x="20" y="90" class="stat-desc">Firestore Query Restructuring</text>
+    <rect x="20" y="100" width="200" height="4" fill="#30363d" rx="2"/>
+    <rect x="20" y="100" width="140" height="4" fill="#f43f5e" rx="2"/>
   </g>
 </svg>
