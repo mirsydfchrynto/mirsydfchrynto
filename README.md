@@ -1,66 +1,62 @@
-# M. Irsyad Fachryanto
-### Aspiring Mobile Developer & Software Architect
+# M. IRSYAD FACHRYANTO
+## Mobile Engineering Specialist | Software Architecture Student
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&size=24&duration=3000&pause=1000&color=F43F5E&center=true&vCenter=true&width=600&lines=MOBILE+DEVELOPER;SOFTWARE+ARCHITECTURE+LEARNER;FLUTTER+SPECIALIST;LINUX+ENTHUSIAST" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=24&duration=3000&pause=1000&color=F43F5E&center=true&vCenter=true&width=600&lines=MOBILE+SYSTEMS+DEVELOPER;FLUTTER+SPECIALIST;ARCHITECTURE+RESEARCHER;LINUX+SECURITY+ENTHUSIAST" alt="Typing SVG" />
 </div>
 
 ---
 
-### 🟢 ABOUT ME
-Mahasiswa D4 Teknik Informatika yang sedang mendalami **Mobile Development** dan **Software Architecture**. Fokus saya adalah membangun aplikasi yang tidak hanya berjalan, tapi juga memiliki fondasi kode yang bersih (Clean Code) dan arsitektur yang kuat (SOLID). Saya percaya bahwa software yang baik dimulai dari perencanaan yang matang.
+### PROFESSIONAL SUMMARY
+Mahasiswa D4 Teknik Informatika dengan spesialisasi pada pengembangan aplikasi mobile dan perencanaan arsitektur perangkat lunak. Fokus utama meliputi pembangunan sistem yang *scalable*, implementasi *Clean Architecture* (SOLID), dan optimasi performa *native* pada platform Android. Berkomitmen pada integritas kode dan efisiensi sistem melalui perencanaan berbasis data.
 
-*   🔭 Sedang belajar: **Advanced Flutter, Kotlin Native, & System Design.**
-*   🌱 Fokus saat ini: Memahami **Clean Architecture** secara mendalam dan implementasi **Design Patterns**.
-*   💬 Tanya saya tentang: **Flutter, Mobile UI/UX, atau Kustomisasi Linux.**
-
----
-
-### 🛡️ ENGINEERING ARSENAL
-
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=dart,flutter,kotlin,nextjs,ts,py,firebase,supabase,linux,git,docker,figma" />
-</div>
+*   Current Focus: Advanced Mobile Systems, Kotlin Native Interoperability, and Scalable Backend Integration.
+*   Academics: Semester 6 | GPA 3.92 / 4.00 | Focused on High-Integrity Software Engineering.
 
 ---
 
-### 🚀 FEATURED PROJECTS
+### TECHNICAL PROFICIENCY
 
-<table border="0">
-  <tr>
-    <td width="50%">
-      <h4>📱 Secure CBT Master</h4>
-      <p>Sistem ujian anti-curang. Fokus pada keamanan tingkat device (Kiosk Mode) dan protokol komunikasi aman.</p>
-      <code>Flutter</code> <code>Kotlin</code> <code>Firebase</code>
-    </td>
-    <td width="50%">
-      <h4>💈 Geges Smart Barber</h4>
-      <p>SaaS manajemen barbershop. Implementasi logika penjadwalan dan sinkronisasi data real-time.</p>
-      <code>Flutter</code> <code>Clean Arch</code> <code>NoSQL</code>
-    </td>
-  </tr>
-</table>
+**Languages & Core**
+Next.js 16, React, TypeScript, Dart, Kotlin, Python, Bash, HTML/CSS.
+
+**Frameworks & Platforms**
+Flutter SDK, Firebase Ecosystem, Supabase, Linux Kernel Customization, Git, Docker.
+
+**Architecture & Principles**
+Clean Architecture, BLoC/Provider Pattern, RESTful API Design, NoSQL Schema Optimization.
 
 ---
 
-### 📊 STATISTICS
+### PRODUCTION LOGBOOK (SELECTED PROJECTS)
+
+| Project | Description | Technology Stack |
+| :--- | :--- | :--- |
+| **Secure CBT Master** | Anti-cheat examination system with device-level locking (Kiosk Mode) and secure QR Handshake protocol. | Flutter, Kotlin, Firebase |
+| **Geges Smart Barber** | SaaS ecosystem for barbershop management featuring fair job-allocation logic and real-time synchronization. | Flutter, Clean Arch, NoSQL |
+| **Ghost Linux V4.0** | Automated environment engineering for Linux focusing on system-level aesthetics and surgical performance. | Bash, Python, Systemd |
+
+---
+
+### SYSTEM ANALYTICS
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=mirsydfchrynto&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117" height="180" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mirsydfchrynto&layout=compact&theme=radical&hide_border=true&bg_color=0d1117" height="180" />
 </div>
 
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mirsydfchrynto&theme=radical&hide_border=true&background=0d1117" width="100%" />
+</div>
+
 ---
 
-### 🤝 CONNECT WITH ME
-<p align="center">
-  <a href="https://wa.me/6285865826621"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white" /></a>
-  <a href="mailto:irsydfchrynto@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" /></a>
-  <a href="https://linkedin.com/in/mirsydfchrynto"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" /></a>
-  <a href="https://irsyad-architect.surge.sh"><img src="https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white" /></a>
-</p>
+### COMMUNICATION CHANNELS
+[WhatsApp](https://wa.me/6285865826621) | [Email](mailto:irsydfchrynto@gmail.com) | [LinkedIn](https://linkedin.com/in/mirsydfchrynto) | [Live Portfolio](https://irsyad-architect.surge.sh)
+
+---
 
 <div align="center">
-  <sub>© 2026 M. Irsyad Fachryanto | Build with focus and curiosity.</sub><br/>
-  <img src="https://komarev.com/ghpvc/?username=mirsydfchrynto&color=f43f5e&style=flat-square&label=PROFILE+VIEWS" />
+  <sub>© 2026 M. Irsyad Fachryanto // Developed for Precision and Performance.</sub><br/>
+  <img src="https://komarev.com/ghpvc/?username=mirsydfchrynto&color=f43f5e&style=flat-square&label=VISITOR+LOG" />
 </div>
