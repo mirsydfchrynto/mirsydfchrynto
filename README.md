@@ -4,7 +4,7 @@
 
 <div align="center">
   <br />
-  <h1>Muhammad Irsyad Fachryanto</h1>
+  <h1>M. Irsyad Fachryanto</h1>
   <p><b>Software Engineer and Systems Architect</b></p>
   <p>Technical Informatics Candidate — Semester 06</p>
   <br />
