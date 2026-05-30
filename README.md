@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/header.svg" width="100%" />
 </div>
 
-# // Muhammad Irsyad Fachryanto
+#  Muhammad Irsyad Fachryanto
 ## [ THE_ARCHITECT ] // SEMESTER_06_STABLE
 
 ```text
