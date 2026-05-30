@@ -18,7 +18,7 @@ RUNTIME        : Caffeine Dependent Loop Enabled
 <div align="center">
   <table>
     <tr>
-      <td width="70%">
+      <td width="60%">
         <h3>SYSTEMS UNDER CONSTRUCTION</h3>
         <p>
           <b>MOBILE SYSTEMS RESEARCH</b><br/>
