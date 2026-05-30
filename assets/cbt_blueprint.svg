@@ -1,0 +1,30 @@
+<svg fill="none" viewBox="0 0 800 240" width="800" height="240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="240" fill="#000" rx="4"/>
+  <g stroke="#1a1a1a" stroke-width="1">
+    <rect x="50" y="60" width="160" height="120" rx="2"/>
+    <rect x="320" y="60" width="160" height="120" rx="2"/>
+    <rect x="590" y="60" width="160" height="120" rx="2"/>
+  </g>
+  
+  <g font-family="ui-monospace, monospace" font-size="9" fill="#666">
+    <text x="130" y="50" text-anchor="middle">ADMIN [NEXT.JS]</text>
+    <text x="400" y="50" text-anchor="middle">TOKEN ENGINE</text>
+    <text x="670" y="50" text-anchor="middle">CLIENT [KOTLIN/DART]</text>
+    
+    <text x="130" y="100" text-anchor="middle" fill="#fff">GENERATE QR</text>
+    <text x="130" y="115" text-anchor="middle">ROTATION: 5S</text>
+    
+    <text x="400" y="100" text-anchor="middle" fill="#fff">VALIDATE SCAN</text>
+    <text x="400" y="115" text-anchor="middle">CHECK: CLOCK_DRIFT</text>
+    
+    <text x="670" y="100" text-anchor="middle" fill="#f43f5e">LOCK_TASK_INIT</text>
+    <text x="670" y="115" text-anchor="middle">SECURE_WINDOW</text>
+  </g>
+  
+  <path d="M210 120 L320 120" stroke="#f43f5e" stroke-dasharray="4 4">
+    <animate attributeName="stroke-dashoffset" from="0" to="20" dur="2s" repeatCount="indefinite" />
+  </path>
+  <path d="M480 120 L590 120" stroke="#f43f5e" stroke-dasharray="4 4">
+    <animate attributeName="stroke-dashoffset" from="0" to="20" dur="2s" repeatCount="indefinite" />
+  </path>
+</svg>

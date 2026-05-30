@@ -1,80 +1,75 @@
-<div align="center">
-  <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/architect_header.svg" width="100%" alt="System Header" />
-</div>
+<img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/identity_header.svg" width="100%" />
 
-<br />
-
-# System Statement
-**Operating at the intersection of native OS boundaries and high-performance web systems. Obsessed with reliability, type safety, and the surgical removal of technical debt.**
-
-I build digital artifacts that prioritize operational permanence over transient trends. My work is a continuous exploration of how to maintain system integrity under the pressure of real-world scale—from locking down Android environments for hundreds of live users to architecting reactive web infrastructures that remain performant despite NoSQL constraints.
+### I build software for constraints.
+I focus on Android native security, real-time data sync, and performance tuning. I prefer specific solutions over broad abstractions. Currently in Semester 6, maintaining a 3.92 GPA while shipping production code for Okey Bimbel.
 
 ---
 
-### // Engineering Philosophy: The Three Pillars
-
-**01 / Predictable State**  
-If a state is not predictable, the system is not finished. I employ strict immutability and leak-proof stream management to ensure that what the user sees is exactly what the database holds.
-
-**02 / Native Interop as a First-Class Citizen**  
-Mobile development is not just about UI wrappers. It is about understanding the underlying hardware. I bridge the gap between Dart and Kotlin with surgical precision to unlock system-level capabilities that generic frameworks cannot reach.
-
-**03 / Maintainability by Constraint**  
-Flexibility is often a mask for indecision. I design systems with strict boundaries (Clean Architecture / SOLID) to force clarity and prevent logic leakage across layers.
+### // Engineering Evolution
+<img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/engineering_timeline.svg" width="100%" />
 
 ---
 
-### // Core Artifacts
+### // The Evidence: Decisions & Outcomes
 
-#### [ 0x01 ] Secure CBT Master
-**Context:** High-stakes digital examination for K-12 environments.  
-**Problem:** Google Forms and generic web browsers allow for trivial cheating via tab-switching, screenshots, and clipboard manipulation.  
-**Constraints:** Low-end student devices, unstable school networks, Spark-tier database limits.  
-**Solution:** A dual-platform ecosystem using Flutter for the UI and a custom Kotlin Native bridge for hardware-level isolation.  
-**Technical Decisions:**
-- **startLockTask Interop:** Utilized native Android APIs via MethodChannel to disable status bar, home button, and recents menu.
-- **FLAG_SECURE Implementation:** Forced hardware-level screenshot and screen-recording prevention.
-- **Dynamic QR Handshake:** Implemented a 5-second rotating token protocol to prevent replay attacks without incurring high Firestore write costs.
-**Trade-offs:** Sacrificed the ease of Flutter's built-in navigation for a strictly controlled native lifecycle.  
-**Lessons:** Real-time monitoring at scale (100+ concurrent users) requires aggressive request batching and on-demand listener management.
+#### [ 0x01 ] Okey Bimbel: Anti-Cheat System
+**Why it exists:** Standard browsers allowed students to search for answers or screenshot questions during exams.  
+**Initial Failure:** Used simple Flutter lifecycle listeners to detect when the app was minimized. Students bypassed this by using split-screen or hardware-level overlays.  
+**What changed:** Migrated to a native Kotlin bridge using `startLockTask` and `FLAG_SECURE`.  
+**The Win:** Forced hardware-level isolation. Screenshotting now returns a black screen, and navigation is completely disabled at the OS level.  
 
-#### [ 0x02 ] Geges Smart Barber
-**Context:** Digitalizing local barbershop operations (SaaS).  
-**Problem:** Unfair job distribution among barbers and booking crashes during peak hours due to Firestore composite index lag.  
-**Constraints:** Real-time sync required for queue transparency without exceeding Spark tier limits.  
-**Solution:** A count-based fair-distribution algorithm integrated with an in-memory fallback filtering system.  
-**Technical Decisions:**
-- **In-Memory Fallback:** When Firestore indexes failed to build, I implemented a client-side filter that fetched global daily data and sorted it in-memory, ensuring zero downtime for the business.
-- **Cascading Permanent Deletion:** Engineered a recursive deleteDoc protocol to ensure 100% data cleanup (Tenant -> Shop -> Admin) to maintain database hygiene.  
-**Impact:** 188 verified tests passed; 0 production crashes during peak holiday bookings.
+#### [ 0x02 ] Secure CBT: QR Handshake
+**The Challenge:** Validating 100+ concurrent students without burning through Firestore write limits via polling.  
+**The Failure:** Initially used a single global token. It was leaked within minutes.  
+**The Architecture:** 
+<img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/cbt_blueprint.svg" width="100%" />
+**Why it works:** Token rotates every 5 seconds. Mobile clients write a server-side timestamp to detect clock drift, ensuring the session remains valid even on poor school networks.
 
 ---
 
-### // Operational Stack
+### // Lessons Learned (Failures)
 
-| Domain | Strategic Alignment | Technologies |
+**The Firestore Index Bottleneck**  
+In *Geges Smart Barber*, I initially queried queues using complex composite filters. During peak holiday bookings, the index-building lag caused the app to hang.  
+**Lesson:** Don't rely 100% on DB-level filtering for mission-critical UX. I implemented an in-memory fallback that loads raw daily data and sorts it client-side when the index fails.
+
+**The Abstraction Trap**  
+I once tried to build a universal wrapper for all Android native interops. It became a maintenance nightmare of `if (version >= X)` checks.  
+**Lesson:** Prefer surgical, isolated native bridges (MethodChannels) for specific features rather than "one-size-fits-all" libraries.
+
+---
+
+### // System Thinking
+- **Complexity:** I accept complexity when it's the only way to meet hardware-level security. I remove it when a simple Bash script can replace a 500-line service.
+- **Abstractions:** I reject them if they hide the underlying lifecycle of the OS. In Flutter, I'd rather write a specific Kotlin MethodChannel than pull in a heavy, generic plugin.
+- **Trade-offs:** I accept increased development time for native interops if it guarantees 0% evasion in a security-critical environment.
+
+---
+
+### // The Opinionated Stack
+
+| I Trust | I Avoid | Trade-offs I Accept |
 | :--- | :--- | :--- |
-| **Mobile** | Native Performance & Security | Flutter, Kotlin Native, MethodChannel, Hive (AES-256) |
-| **Web** | Performance & Rendering | Next.js 16 (Turbopack), TypeScript, React |
-| **Back-end** | Serverless & Efficiency | FastAPI, Firebase, NoSQL Optimization |
-| **System** | Performance Tuning | Linux Kernel, Bash, Systemd, Process Management |
+| **Strict Type Safety** | Generic `dynamic` types | Native overhead for security |
+| **MethodChannels** | Heavy generic plugins | In-memory sorting for DB speed |
+| **Systemd Daemons** | Unmonitored cron jobs | Immutable state vs memory cost |
+| **SQLite/Hive** | Unstructured LocalStorage | Client-side validation redundancy |
 
 ---
 
-### // Current Research & Focus
-- **Procedural Motion in UX:** Reducing cognitive load in complex dashboards through 60fps SVG-based state visualizations.
-- **Network Resilience:** Designing "Offline-First" state machines that resolve complex conflicts during intermittent connectivity.
-- **Informatics Integrity:** Maintaining a 3.92/4.00 GPA performance node while actively mentoring 40+ junior engineers in Clean Architecture.
+### // Research Journal
+- **Q:** Can we maintain 100% kiosk integrity on non-rooted Android devices without using Google's Enterprise API?
+- **Q:** How much latency can we hide in a distributed NoSQL sync using local state prediction?
+- **Q:** Is procedural motion actually effective at reducing dashboard cognitive load, or is it just aesthetic?
 
 ---
 
-### // Correspondence Protocol
-**Synchronous Communication:** [WhatsApp](https://wa.me/6285865826621)  
-**Asynchronous Correspondence:** [irsydfchrynto@gmail.com](mailto:irsydfchrynto@gmail.com)  
-**System Portfolio:** [irsyad-architect.surge.sh](https://irsyad-architect.surge.sh)
+### // Reach Out
+- [irsydfchrynto@gmail.com](mailto:irsydfchrynto@gmail.com)
+- [Portfolio](https://irsyad-architect.surge.sh)
+- [WhatsApp](https://wa.me/6285865826621)
 
 ---
-
 <div align="center">
-  <sub>VERSION_V8.0 // Muhammad Irsyad Fachryanto // 2026</sub>
+  <sub>Muhammad Irsyad Fachryanto // 2026 // No decoration. Only engineering.</sub>
 </div>

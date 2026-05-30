@@ -1,0 +1,43 @@
+<svg fill="none" viewBox="0 0 800 150" width="800" height="150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="150" fill="#000"/>
+  <line x1="50" y1="100" x2="750" y2="100" stroke="#1a1a1a" stroke-width="2"/>
+  
+  <g font-family="ui-monospace, monospace" font-size="10" font-weight="500">
+    <g transform="translate(50, 100)">
+      <circle r="4" fill="#333"/>
+      <text y="-50" text-anchor="middle" fill="#fff">2020</text>
+      <text y="-35" text-anchor="middle" fill="#666">NETWORKING</text>
+      <text y="-20" text-anchor="middle" fill="#444">LINUX ADMIN</text>
+    </g>
+    <g transform="translate(190, 100)">
+      <circle r="4" fill="#333"/>
+      <text y="-50" text-anchor="middle" fill="#fff">2022</text>
+      <text y="-35" text-anchor="middle" fill="#666">FLUTTER</text>
+      <text y="-20" text-anchor="middle" fill="#444">FOUNDATIONS</text>
+    </g>
+    <g transform="translate(330, 100)">
+      <circle r="4" fill="#333"/>
+      <text y="-50" text-anchor="middle" fill="#fff">2023</text>
+      <text y="-35" text-anchor="middle" fill="#666">CLEAN ARCH</text>
+      <text y="-20" text-anchor="middle" fill="#444">SOLID / BLoC</text>
+    </g>
+    <g transform="translate(470, 100)">
+      <circle r="4" fill="#f43f5e"/>
+      <text y="-50" text-anchor="middle" fill="#fff">2024</text>
+      <text y="-35" text-anchor="middle" fill="#f43f5e">PRODUCTION</text>
+      <text y="-20" text-anchor="middle" fill="#444">OKEY BIMBEL</text>
+    </g>
+    <g transform="translate(610, 100)">
+      <circle r="4" fill="#f43f5e"/>
+      <text y="-50" text-anchor="middle" fill="#fff">2025</text>
+      <text y="-35" text-anchor="middle" fill="#f43f5e">KIOSK MODE</text>
+      <text y="-20" text-anchor="middle" fill="#444">NATIVE INTEROP</text>
+    </g>
+    <g transform="translate(750, 100)">
+      <circle r="4" fill="#fff" opacity="0.5"/>
+      <text y="-50" text-anchor="middle" fill="#fff">2026</text>
+      <text y="-35" text-anchor="middle" fill="#999">DISTRIBUTED</text>
+      <text y="-20" text-anchor="middle" fill="#444">RESEARCH</text>
+    </g>
+  </g>
+</svg>
