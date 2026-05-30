@@ -1,44 +1,61 @@
-# M. IRSYAD FACHRYANTO
-## Mobile Systems Architect | Software Engineering Specialist
+<div align="center">
+  <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/header.svg" width="100%" />
+</div>
+
+<div align="center">
+  <table>
+    <tr>
+      <td width="70%">
+        <h1>M. IRSYAD FACHRYANTO</h1>
+        <p>
+          <b>Mahasiswa D4 Teknik Informatika yang fokus mendalami arsitektur mobile dan sistem yang terstruktur.</b><br/>
+          Sedang mengeksplorasi Clean Architecture (SOLID) dan Native Interoperability untuk membangun aplikasi yang efisien dan skalabel. Menghargai proses belajar dan dedikasi dalam setiap baris kode.
+        </p>
+        <p>
+          🔭 Sedang Belajar: <b>Advanced Flutter, Kotlin Native, & System Design.</b><br/>
+          🌱 Fokus: <b>Clean Architecture & Design Patterns.</b>
+        </p>
+      </td>
+      <td width="30%" align="center">
+        <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/pet.svg" width="150" />
+      </td>
+    </tr>
+  </table>
+</div>
 
 ---
 
-### // MISSION_CRITICAL_OBJECTIVES
+### // SYSTEM_VISUALIZER
 
-Mahasiswa D4 Teknik Informatika dengan fokus pada pembangunan sistem mobile yang tangguh dan arsitektur perangkat lunak yang skalabel. Menggabungkan prinsip **Clean Architecture (SOLID)** dengan efisiensi **Native Interoperability** untuk menciptakan solusi digital kelas dunia.
-
-*   **Engineering Role:** Aspiring Mobile Systems Architect
-*   **System Status:** Active | Semester 6 | GPA 3.92 / 4.00
-*   **Operational Scope:** Native Systems, Security Infrastructure, and Distributed Systems.
+<div align="center">
+  <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/visuals.svg" width="100%" />
+</div>
 
 ---
 
 ### // TECHNICAL_ARSENAL
 
-| SEGMENT | TECHNOLOGIES |
-| :--- | :--- |
-| **Mobile Core** | Flutter SDK, Dart OOP, Kotlin Native, MethodChannel Interop, BLoC, Provider. |
-| **Full-Stack** | Next.js 16 (App Router), React, TypeScript, Python (FastAPI), HTML5/CSS3. |
-| **Infrastructure** | Firebase Ecosystem, Supabase, Linux Kernel Customization, Docker, Git, Bash. |
-| **Principles** | Clean Architecture (SOLID), DDD, RESTful API Design, NoSQL Data Modeling. |
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=dart,flutter,kotlin,nextjs,ts,py,firebase,supabase,linux,git,docker,figma" />
+</div>
 
 ---
 
-### // PRODUCTION_LOGBOOK (SHOWCASE)
+### // PRODUCTION_LOGBOOK
 
 <table border="0">
   <tr>
     <td width="33%">
       <b>SECURE CBT MASTER</b><br/>
-      High-integrity exam system. Locked 100% devices via Kotlin Native Kiosk Mode and 5s rotation QR Handshake.
+      Sistem ujian anti-curang. Fokus pada keamanan device (Kiosk Mode) dan protokol komunikasi.
     </td>
     <td width="33%">
       <b>GEGES SMART BARBER</b><br/>
-      Enterprise SaaS for barbershops. Features fair job-allocation algorithms and real-time state synchronization.
+      SaaS manajemen barbershop. Implementasi penjadwalan dan sinkronisasi real-time.
     </td>
     <td width="33%">
       <b>GHOST LINUX V4.0</b><br/>
-      Automated environment engineering for Linux. Focused on system-level aesthetics and surgical performance.
+      Engineering lingkungan Linux. Fokus pada performa sistem dan estetika otomasi.
     </td>
   </tr>
   <tr>
@@ -50,21 +67,35 @@ Mahasiswa D4 Teknik Informatika dengan fokus pada pembangunan sistem mobile yang
 
 ---
 
-### // ESTABLISH_COMMUNICATION
+### // SYSTEM_TELEMETRY
 
 <div align="center">
-  <table border="0">
-    <tr>
-      <td align="center"><a href="https://wa.me/6285865826621"><b>WHATSAPP</b></a></td>
-      <td align="center"><a href="mailto:irsydfchrynto@gmail.com"><b>EMAIL</b></a></td>
-      <td align="center"><a href="https://linkedin.com/in/mirsydfchrynto"><b>LINKEDIN</b></a></td>
-      <td align="center"><a href="https://irsyad-architect.surge.sh"><b>PORTFOLIO</b></a></td>
-    </tr>
-  </table>
+  <img src="https://github-readme-stats.vercel.app/api?username=mirsydfchrynto&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=f43f5e&icon_color=f43f5e" height="180" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mirsydfchrynto&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=f43f5e" height="180" />
+</div>
+
+---
+
+### // CONTRIBUTION_SNAKE
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/output/github-contribution-grid-snake-dark.svg" width="100%" />
+</div>
+
+---
+
+### // CONNECT_LINK
+
+<div align="center">
+  <a href="https://wa.me/6285865826621"><b>WHATSAPP</b></a> | 
+  <a href="mailto:irsydfchrynto@gmail.com"><b>EMAIL</b></a> | 
+  <a href="https://linkedin.com/in/mirsydfchrynto"><b>LINKEDIN</b></a> | 
+  <a href="https://irsyad-architect.surge.sh"><b>PORTFOLIO</b></a>
 </div>
 
 ---
 
 <div align="center">
-  <sub>© 2026 M. IRSYAD FACHRYANTO // ENGINEERED FOR SUPREMACY.</sub>
+  <sub>© 2026 M. IRSYAD FACHRYANTO // ARCHITECTING_WITH_DEDICATION.</sub><br/>
+  <img src="https://komarev.com/ghpvc/?username=mirsydfchrynto&color=f43f5e&style=flat-square&label=VISITOR_LOG" />
 </div>

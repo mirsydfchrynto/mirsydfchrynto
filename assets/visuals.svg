@@ -1,61 +1,48 @@
-<svg fill="none" viewBox="0 0 800 200" width="800" height="200" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
-    }
-    @keyframes rotate {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-    .orbit {
-      stroke: #30363d;
-      stroke-width: 1;
-      stroke-dasharray: 4;
-      fill: none;
-    }
-    .node {
-      fill: #0d1117;
-      stroke: #f43f5e;
-      stroke-width: 2;
-    }
-    .label {
-      fill: #f43f5e;
-      font-family: monospace;
-      font-size: 12px;
-      font-weight: bold;
-    }
-    .icon {
-      fill: #f43f5e;
-    }
-    .container {
-      animation: float 4s ease-in-out infinite;
-    }
-  </style>
-
-  <rect width="800" height="200" fill="#0d1117" rx="8" stroke="#30363d"/>
+<svg fill="none" viewBox="0 0 800 300" width="800" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="300" fill="#0d1117" rx="12"/>
   
-  <g class="container">
-    <!-- Mobile Node -->
-    <circle cx="200" cy="100" r="45" class="orbit"/>
-    <circle cx="200" cy="100" r="35" class="node"/>
-    <path d="M195 90 h10 v20 h-10 z M193 88 h14 v24 h-14 z" class="icon" transform="translate(0, 0)"/>
-    <text x="200" y="160" text-anchor="middle" class="label">MOBILE_CORE</text>
+  <g transform="translate(400, 150)">
+    <!-- Central Node -->
+    <circle r="30" fill="#0d1117" stroke="#f43f5e" stroke-width="2">
+      <animate attributeName="r" values="30;35;30" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text text-anchor="middle" y="5" font-family="monospace" font-size="10" fill="#f43f5e">CORE</text>
 
-    <!-- Arch Node -->
-    <circle cx="400" cy="100" r="55" class="orbit"/>
-    <circle cx="400" cy="100" r="45" class="node"/>
-    <path d="M390 90 l10 -10 l10 10 l-10 10 z" class="icon"/>
-    <text x="400" y="170" text-anchor="middle" class="label">ARCH_FOUNDATION</text>
+    <!-- Satellite Nodes with "3D" rotation -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite" />
+      
+      <line x1="0" y1="0" x2="120" y2="0" stroke="#30363d" stroke-dasharray="5,5" />
+      <circle cx="120" cy="0" r="15" fill="#0d1117" stroke="#f43f5e" stroke-width="2" />
+      <text x="120" y="-20" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">FLUTTER</text>
+    </g>
 
-    <!-- Secure Node -->
-    <circle cx="600" cy="100" r="45" class="orbit"/>
-    <circle cx="600" cy="100" r="35" class="node"/>
-    <path d="M595 95 h10 v10 h-10 z" class="icon"/>
-    <text x="600" y="160" text-anchor="middle" class="label">SECURE_SYSTEMS</text>
-    
-    <!-- Connections -->
-    <line x1="245" y1="100" x2="345" y2="100" stroke="#f43f5e" stroke-width="1" stroke-dasharray="2"/>
-    <line x1="455" y1="100" x2="555" y2="100" stroke="#f43f5e" stroke-width="1" stroke-dasharray="2"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="120" to="480" dur="10s" repeatCount="indefinite" />
+      
+      <line x1="0" y1="0" x2="120" y2="0" stroke="#30363d" stroke-dasharray="5,5" />
+      <circle cx="120" cy="0" r="15" fill="#0d1117" stroke="#f43f5e" stroke-width="2" />
+      <text x="120" y="-20" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">ARCH</text>
+    </g>
+
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="240" to="600" dur="10s" repeatCount="indefinite" />
+      
+      <line x1="0" y1="0" x2="120" y2="0" stroke="#30363d" stroke-dasharray="5,5" />
+      <circle cx="120" cy="0" r="15" fill="#0d1117" stroke="#f43f5e" stroke-width="2" />
+      <text x="120" y="-20" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">SYSTEMS</text>
+    </g>
+  </g>
+
+  <!-- Animated Pulse Rings -->
+  <g transform="translate(400, 150)">
+    <circle r="0" stroke="#f43f5e" stroke-width="1" opacity="0.5">
+      <animate attributeName="r" from="30" to="150" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.5" to="0" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle r="0" stroke="#f43f5e" stroke-width="1" opacity="0.5">
+      <animate attributeName="r" from="30" to="150" dur="3s" begin="1.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.5" to="0" dur="3s" begin="1.5s" repeatCount="indefinite" />
+    </circle>
   </g>
 </svg>
