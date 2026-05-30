@@ -1,5 +1,7 @@
-# M. IRSYAD FACHRYANTO
-## Mobile Engineering Specialist | Software Architecture Student
+<div align="center">
+  <h1>M. IRSYAD FACHRYANTO</h1>
+  <h3>Mobile Engineering Specialist | Software Architecture Student</h3>
+</div>
 
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=24&duration=3000&pause=1000&color=F43F5E&center=true&vCenter=true&width=600&lines=MOBILE+SYSTEMS+DEVELOPER;FLUTTER+SPECIALIST;ARCHITECTURE+RESEARCHER;LINUX+SECURITY+ENTHUSIAST" alt="Typing SVG" />
