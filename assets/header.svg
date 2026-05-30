@@ -1,71 +1,52 @@
 <svg fill="none" viewBox="0 0 800 200" width="800" height="200" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        @keyframes pulse {
-          0%, 100% { opacity: 0.2; }
-          50% { opacity: 0.6; }
-        }
-        @keyframes scan {
-          0% { transform: translateY(-100%); }
-          100% { transform: translateY(100%); }
-        }
-        @keyframes typing {
-          from { width: 0; }
-          to { width: 100%; }
-        }
-        .container {
-          font-family: 'Courier New', Courier, monospace;
-          background: #0d1117;
-          color: #f43f5e;
-          width: 800px;
-          height: 200px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          position: relative;
-          overflow: hidden;
-          border: 1px solid #f43f5e;
-          border-radius: 8px;
-        }
-        .grid {
-          position: absolute;
-          top: 0; left: 0; width: 100%; height: 100%;
-          background-image: linear-gradient(#161b22 1px, transparent 1px), linear-gradient(90deg, #161b22 1px, transparent 1px);
-          background-size: 20px 20px;
-          animation: pulse 4s infinite;
-        }
-        .scanner {
-          position: absolute;
-          top: 0; left: 0; width: 100%; height: 2px;
-          background: #f43f5e;
-          box-shadow: 0 0 15px #f43f5e;
-          animation: scan 3s linear infinite;
-        }
-        .text-main {
-          font-size: 40px;
-          font-weight: bold;
-          letter-spacing: 5px;
-          margin-bottom: 10px;
-          z-index: 10;
-        }
-        .text-sub {
-          font-size: 18px;
-          letter-spacing: 2px;
-          z-index: 10;
-          overflow: hidden;
-          white-space: nowrap;
-          border-right: 3px solid #f43f5e;
-          animation: typing 4s steps(40) infinite;
-        }
-      </style>
-      <div class="container">
-        <div class="grid"></div>
-        <div class="scanner"></div>
-        <div class="text-main">SYSTEM ARCHITECT</div>
-        <div class="text-sub">INITIALIZING ELITE INTERFACE...</div>
-      </div>
-    </div>
-  </foreignObject>
+  <style>
+    @keyframes pulse {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 0.6; }
+    }
+    @keyframes scan {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(200px); }
+    }
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    .container {
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .grid {
+      fill: url(#gridPattern);
+      animation: pulse 4s infinite;
+    }
+    .scanner {
+      stroke: #f43f5e;
+      stroke-width: 2;
+      filter: drop-shadow(0 0 5px #f43f5e);
+      animation: scan 3s linear infinite;
+    }
+    .text-main {
+      fill: #f43f5e;
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: 5px;
+    }
+    .text-sub {
+      fill: #f43f5e;
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+  </style>
+  <defs>
+    <pattern id="gridPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#161b22" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <rect width="800" height="200" fill="#0d1117" rx="8" stroke="#f43f5e" stroke-width="1"/>
+  <rect width="800" height="200" class="grid" rx="8"/>
+  <line x1="0" y1="0" x2="800" y2="0" class="scanner" />
+  
+  <text x="400" y="100" text-anchor="middle" class="text-main">SYSTEM ARCHITECT</text>
+  <text x="400" y="140" text-anchor="middle" class="text-sub">INITIALIZING ELITE INTERFACE...</text>
 </svg>

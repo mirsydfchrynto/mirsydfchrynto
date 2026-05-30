@@ -1,57 +1,61 @@
 <svg fill="none" viewBox="0 0 800 200" width="800" height="200" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        @keyframes float {
-          0% { transform: translateY(0px) rotate(0deg); }
-          50% { transform: translateY(-10px) rotate(2deg); }
-          100% { transform: translateY(0px) rotate(0deg); }
-        }
-        @keyframes glow {
-          0%, 100% { filter: drop-shadow(0 0 5px #f43f5e); }
-          50% { filter: drop-shadow(0 0 20px #f43f5e); }
-        }
-        .canvas {
-          background: #0d1117;
-          width: 800px;
-          height: 200px;
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          border-radius: 8px;
-          border: 1px dashed #30363d;
-        }
-        .ship {
-          animation: float 3s ease-in-out infinite, glow 2s ease-in-out infinite;
-          fill: #f43f5e;
-        }
-        .orbit {
-          stroke: #30363d;
-          stroke-dasharray: 5 5;
-          fill: none;
-        }
-        .label {
-          fill: #8b949e;
-          font-family: monospace;
-          font-size: 12px;
-          text-anchor: middle;
-        }
-      </style>
-      <div class="canvas">
-        <svg width="600" height="150" viewBox="0 0 600 150">
-          <circle cx="100" cy="75" r="40" class="orbit" />
-          <path d="M100 55 L115 85 L85 85 Z" class="ship" />
-          <text x="100" y="130" class="label">MOBILE_CORE</text>
+  <style>
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .orbit {
+      stroke: #30363d;
+      stroke-width: 1;
+      stroke-dasharray: 4;
+      fill: none;
+    }
+    .node {
+      fill: #0d1117;
+      stroke: #f43f5e;
+      stroke-width: 2;
+    }
+    .label {
+      fill: #f43f5e;
+      font-family: monospace;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .icon {
+      fill: #f43f5e;
+    }
+    .container {
+      animation: float 4s ease-in-out infinite;
+    }
+  </style>
 
-          <circle cx="300" cy="75" r="50" class="orbit" />
-          <rect x="280" y="60" width="40" height="30" class="ship" rx="2" />
-          <text x="300" y="140" class="label">ARCH_FOUNDATION</text>
+  <rect width="800" height="200" fill="#0d1117" rx="8" stroke="#30363d"/>
+  
+  <g class="container">
+    <!-- Mobile Node -->
+    <circle cx="200" cy="100" r="45" class="orbit"/>
+    <circle cx="200" cy="100" r="35" class="node"/>
+    <path d="M195 90 h10 v20 h-10 z M193 88 h14 v24 h-14 z" class="icon" transform="translate(0, 0)"/>
+    <text x="200" y="160" text-anchor="middle" class="label">MOBILE_CORE</text>
 
-          <circle cx="500" cy="75" r="40" class="orbit" />
-          <path d="M485 75 Q500 50 515 75 T500 100 T485 75" class="ship" />
-          <text x="500" y="130" class="label">SECURE_SYSTEMS</text>
-        </svg>
-      </div>
-    </div>
-  </foreignObject>
+    <!-- Arch Node -->
+    <circle cx="400" cy="100" r="55" class="orbit"/>
+    <circle cx="400" cy="100" r="45" class="node"/>
+    <path d="M390 90 l10 -10 l10 10 l-10 10 z" class="icon"/>
+    <text x="400" y="170" text-anchor="middle" class="label">ARCH_FOUNDATION</text>
+
+    <!-- Secure Node -->
+    <circle cx="600" cy="100" r="45" class="orbit"/>
+    <circle cx="600" cy="100" r="35" class="node"/>
+    <path d="M595 95 h10 v10 h-10 z" class="icon"/>
+    <text x="600" y="160" text-anchor="middle" class="label">SECURE_SYSTEMS</text>
+    
+    <!-- Connections -->
+    <line x1="245" y1="100" x2="345" y2="100" stroke="#f43f5e" stroke-width="1" stroke-dasharray="2"/>
+    <line x1="455" y1="100" x2="555" y2="100" stroke="#f43f5e" stroke-width="1" stroke-dasharray="2"/>
+  </g>
 </svg>
