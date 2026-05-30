@@ -27,18 +27,10 @@
 
 ---
 
-### // SYSTEM_DIAGNOSTICS
+### // KERNEL_TERMINAL_EXPLORER
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/terminal.svg" width="100%" />
-</div>
-
----
-
-### // ARCHITECTURAL_ACHIEVEMENTS
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/achievements.svg" width="100%" />
+  <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/it_playhouse.svg" width="100%" />
 </div>
 
 ---
