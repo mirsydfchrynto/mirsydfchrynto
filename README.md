@@ -7,10 +7,10 @@
 ```text
 SYSTEM SPECIFICATIONS
 -----------------------------------------------------------------------
-NAME           : Muhammad Irsyad Fachryanto
+NAME           : M. Irsyad Fachryanto
 STATUS         : D4 Teknik Informatika — Semester 06
-PERFORMANCE    : 3.92 / 4.00 (High Performance Academic State)
-FOCUS          : Flutter Native — Kotlin Native — Next.js
+PERFORMANCE    : 3.92 / 4.00 
+FOCUS          : Flutter Native — Kotlin Native
 RUNTIME        : Caffeine Dependent Loop Enabled
 -----------------------------------------------------------------------
 ```
