@@ -8,19 +8,37 @@
       <td width="70%">
         <h1>M. IRSYAD FACHRYANTO</h1>
         <p>
-          <b>Mahasiswa D4 Teknik Informatika yang fokus mendalami arsitektur mobile dan sistem yang terstruktur.</b><br/>
-          Sedang mengeksplorasi Clean Architecture (SOLID) dan Native Interoperability untuk membangun aplikasi yang efisien dan skalabel. Menghargai proses belajar dan dedikasi dalam setiap baris kode.
+          <b>Aspiring Mobile Architect | Software Engineering Researcher</b><br/>
+          Fokus pada pengembangan sistem mobile yang tangguh dengan implementasi arsitektur perangkat lunak yang skalabel (Clean Architecture & SOLID).
         </p>
         <p>
-          🔭 Sedang Belajar: <b>Advanced Flutter, Kotlin Native, & System Design.</b><br/>
-          🌱 Fokus: <b>Clean Architecture & Design Patterns.</b>
+          🔭 Status: <b>Semester 6 (D4 Teknik Informatika)</b><br/>
+          🌱 GPA: <b>3.92 / 4.00 (Academic Performance)</b><br/>
+          ⚡ Focus: <b>Flutter Native, Kotlin Interop, & Security Systems.</b>
         </p>
       </td>
       <td width="30%" align="center">
-        <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/pet.svg" width="150" />
+        <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/pet.svg" width="150" /><br/>
+        <sub><b>SYSTEM_SENTINEL [V1.0]</b><br/>Mascot pendamping riset sistem.</sub>
       </td>
     </tr>
   </table>
+</div>
+
+---
+
+### // SYSTEM_DIAGNOSTICS
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/terminal.svg" width="100%" />
+</div>
+
+---
+
+### // ARCHITECTURAL_ACHIEVEMENTS
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/achievements.svg" width="100%" />
 </div>
 
 ---
@@ -67,16 +85,7 @@
 
 ---
 
-### // SYSTEM_TELEMETRY
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mirsydfchrynto&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=f43f5e&icon_color=f43f5e" height="180" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mirsydfchrynto&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=f43f5e" height="180" />
-</div>
-
----
-
-### // CONTRIBUTION_SNAKE
+### // CONTRIBUTION_SNAKE_MATRIX
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/output/github-contribution-grid-snake-dark.svg" width="100%" />
@@ -84,7 +93,7 @@
 
 ---
 
-### // CONNECT_LINK
+### // ESTABLISH_COMMUNICATION
 
 <div align="center">
   <a href="https://wa.me/6285865826621"><b>WHATSAPP</b></a> | 
@@ -96,6 +105,6 @@
 ---
 
 <div align="center">
-  <sub>© 2026 M. IRSYAD FACHRYANTO // ARCHITECTING_WITH_DEDICATION.</sub><br/>
+  <sub>© 2026 M. IRSYAD FACHRYANTO // ENGINEERED_FOR_STABILITY.</sub><br/>
   <img src="https://komarev.com/ghpvc/?username=mirsydfchrynto&color=f43f5e&style=flat-square&label=VISITOR_LOG" />
 </div>
