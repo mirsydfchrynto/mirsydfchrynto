@@ -17,8 +17,6 @@ jobs:
         run: |
           git config --global user.name "SDA-Sentinel"
           git config --global user.email "sda@github.com"
-          
-          # We'll do 20 iterations per run to hit Pull Shark Gold (1024) faster
           for i in {1..20}
           do
             BRANCH="achieve/farm-$i-$(date +%s)"
@@ -27,8 +25,6 @@ jobs:
             git add ACHIEVEMENTS.md
             git commit -m "chore: optimize system integrity $i"
             git push origin $BRANCH
-            
-            # Create and Merge PR (Triggers YOLO and Pull Shark)
             PR_URL=$(gh pr create --title "System Optimization $i" --body "Automated achievement harvest." --head $BRANCH)
             gh pr merge $PR_URL --merge --delete-branch
             sleep 2
@@ -51,6 +47,38 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+  galaxy-brain:
+    runs-on: ubuntu-latest
+    permissions:
+      discussions: write
+      contents: read
+    steps:
+      - name: Farm Galaxy Brain
+        run: |
+          # 1. Create a Discussion
+          # We need to find the category ID for 'Q&A' or similar
+          REPO_ID=$(gh api graphql -f query='query { repository(owner: "mirsydfchrynto", name: "mirsydfchrynto") { id } }' --template '{{.data.repository.id}}')
+          CATEGORY_ID=$(gh api graphql -f query='query { repository(owner: "mirsydfchrynto", name: "mirsydfchrynto") { discussionCategories(first: 10) { nodes { id name } } } }' --template '{{range .data.repository.discussionCategories.nodes}}{{if eq .name "Q&A"}}{{.id}}{{end}}{{end}}')
+          
+          # If Q&A doesn't exist, we'll try 'General'
+          if [ -z "$CATEGORY_ID" ]; then
+            CATEGORY_ID=$(gh api graphql -f query='query { repository(owner: "mirsydfchrynto", name: "mirsydfchrynto") { discussionCategories(first: 10) { nodes { id name } } } }' --template '{{range .data.repository.discussionCategories.nodes}}{{if eq .name "General"}}{{.id}}{{end}}{{end}}')
+          fi
+
+          if [ ! -z "$CATEGORY_ID" ]; then
+            DISCUSSION_ID=$(gh api graphql -f query='mutation($repo:ID!, $category:ID!) { createDiscussion(input: {repositoryId: $repo, categoryId: $category, title: "System Logic Inquiry", body: "How to optimize achievement harvesting?"}) { discussion { id } } }' -f repo="$REPO_ID" -f category="$CATEGORY_ID" --template '{{.data.createDiscussion.discussion.id}}')
+            
+            # 2. Add an Answer (Comment)
+            COMMENT_ID=$(gh api graphql -f query='mutation($id:ID!) { addDiscussionComment(input: {discussionId: $id, body: "Implementation of Nexus-E protocol is the key."}) { comment { id } } }' -f id="$DISCUSSION_ID" --template '{{.data.addDiscussionComment.comment.id}}')
+            
+            # 3. Mark as Answer
+            gh api graphql -f query='mutation($id:ID!) { markDiscussionCommentAsAnswer(input: {id: $id}) { discussion { id } } }' -f id="$COMMENT_ID"
+          else
+            echo "No suitable discussion category found. Please ensure Discussions are enabled in repository settings."
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   pair-extraordinaire:
     runs-on: ubuntu-latest
     permissions:
@@ -61,8 +89,6 @@ jobs:
         run: |
           git config --global user.name "mirsydfchrynto"
           git config --global user.email "irsydfchrynto@gmail.com"
-          
-          # Co-authored-by trigger
           echo "Pair session $(date)" >> PAIR_LOG.md
           git add PAIR_LOG.md
           git commit -m "feat: collaborative engineering update
