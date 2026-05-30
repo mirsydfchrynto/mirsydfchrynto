@@ -18,7 +18,7 @@ RUNTIME        : Caffeine Dependent Loop Enabled
 <div align="center">
   <table>
     <tr>
-      <td width="80%">
+      <td width="65%">
         <p>
           <b>MOBILE SYSTEMS RESEARCH</b><br/>
           Fokus pada <code>Native Interop</code> dan <code>Surgical Hardware Control</code>. 
@@ -30,7 +30,7 @@ RUNTIME        : Caffeine Dependent Loop Enabled
           Ekspertise: Sistem monitoring <code>Firestore</code> real-time dan mekanisme <code>AES-256</code> state recovery.
         </p>
       </td>
-      <td width="20%" align="center">
+      <td width="35%" align="center">
         <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/pet.svg" width="150" /><br/>
         <sub><b>SYSTEM SENTINEL V6.0</b><br/>Technical Assistant</sub>
       </td>
