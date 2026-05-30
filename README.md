@@ -1,75 +1,55 @@
-<img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/identity_header.svg" width="100%" />
-
-### I build software for constraints.
-I focus on Android native security, real-time data sync, and performance tuning. I prefer specific solutions over broad abstractions. Currently in Semester 6, maintaining a 3.92 GPA while shipping production code for Okey Bimbel.
+# Muhammad Irsyad Fachryanto
+**Architecting system integrity under constraints.**
 
 ---
 
-### // Engineering Evolution
-<img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/engineering_timeline.svg" width="100%" />
+### // SYSTEM_MAP
+<img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/SYSTEM_MAP.svg" width="100%" />
 
 ---
 
-### // The Evidence: Decisions & Outcomes
-
-#### [ 0x01 ] Okey Bimbel: Anti-Cheat System
-**Why it exists:** Standard browsers allowed students to search for answers or screenshot questions during exams.  
-**Initial Failure:** Used simple Flutter lifecycle listeners to detect when the app was minimized. Students bypassed this by using split-screen or hardware-level overlays.  
-**What changed:** Migrated to a native Kotlin bridge using `startLockTask` and `FLAG_SECURE`.  
-**The Win:** Forced hardware-level isolation. Screenshotting now returns a black screen, and navigation is completely disabled at the OS level.  
-
-#### [ 0x02 ] Secure CBT: QR Handshake
-**The Challenge:** Validating 100+ concurrent students without burning through Firestore write limits via polling.  
-**The Failure:** Initially used a single global token. It was leaked within minutes.  
-**The Architecture:** 
-<img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/cbt_blueprint.svg" width="100%" />
-**Why it works:** Token rotates every 5 seconds. Mobile clients write a server-side timestamp to detect clock drift, ensuring the session remains valid even on poor school networks.
+### // LIVE_ENGINEERING_STATE
+<img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/LIVE_STATE.svg" width="100%" />
 
 ---
 
-### // Lessons Learned (Failures)
-
-**The Firestore Index Bottleneck**  
-In *Geges Smart Barber*, I initially queried queues using complex composite filters. During peak holiday bookings, the index-building lag caused the app to hang.  
-**Lesson:** Don't rely 100% on DB-level filtering for mission-critical UX. I implemented an in-memory fallback that loads raw daily data and sorts it client-side when the index fails.
-
-**The Abstraction Trap**  
-I once tried to build a universal wrapper for all Android native interops. It became a maintenance nightmare of `if (version >= X)` checks.  
-**Lesson:** Prefer surgical, isolated native bridges (MethodChannels) for specific features rather than "one-size-fits-all" libraries.
+### // FAILURE_ARCHIVE
+<img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/FAILURE_ARCHIVE.svg" width="100%" />
 
 ---
 
-### // System Thinking
-- **Complexity:** I accept complexity when it's the only way to meet hardware-level security. I remove it when a simple Bash script can replace a 500-line service.
-- **Abstractions:** I reject them if they hide the underlying lifecycle of the OS. In Flutter, I'd rather write a specific Kotlin MethodChannel than pull in a heavy, generic plugin.
-- **Trade-offs:** I accept increased development time for native interops if it guarantees 0% evasion in a security-critical environment.
+### // ARCHITECTURE_DEEP_IVE: SECURE_CBT
+<img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/CBT_BLUEPRINT.svg" width="100%" />
+
+#### The Core Logic
+I built the Secure CBT system to solve a specific problem: students bypassing browser-based exam locks. 
+- **The Kotlin Bridge:** Instead of relying on Dart-level listeners, I used `startLockTask()` to request the OS to pin the application.
+- **Hardware Control:** `FLAG_SECURE` was implemented at the window level to ensure that screenshot attempts return a zero-byte black image.
+- **Time Integrity:** To prevent students from changing their device clock to gain extra time, I implemented a network handshake that compares `FieldValue.serverTimestamp()` with local UTC time to calculate drift.
 
 ---
 
-### // The Opinionated Stack
-
-| I Trust | I Avoid | Trade-offs I Accept |
-| :--- | :--- | :--- |
-| **Strict Type Safety** | Generic `dynamic` types | Native overhead for security |
-| **MethodChannels** | Heavy generic plugins | In-memory sorting for DB speed |
-| **Systemd Daemons** | Unmonitored cron jobs | Immutable state vs memory cost |
-| **SQLite/Hive** | Unstructured LocalStorage | Client-side validation redundancy |
+### // SYSTEM_THINKING
+- **Complexity Choice:** I pull in native complexity (Kotlin/MethodChannels) when OS-level security is non-negotiable. I reject it when a simple in-memory sort can replace a complex DB query.
+- **Abstraction Policy:** If an abstraction hides the lifecycle of the underlying process, I avoid it. I prefer building my own bridges over using generic, heavy plugins.
+- **Design Philosophy:** Design exists to communicate state. In my UIs, high-contrast typography and real-time status indicators take priority over decorative assets.
 
 ---
 
-### // Research Journal
-- **Q:** Can we maintain 100% kiosk integrity on non-rooted Android devices without using Google's Enterprise API?
-- **Q:** How much latency can we hide in a distributed NoSQL sync using local state prediction?
-- **Q:** Is procedural motion actually effective at reducing dashboard cognitive load, or is it just aesthetic?
+### // THE_NOW_OPERATING_SYSTEM
+- **Currently Building:** Native-to-web synchronization bridge for a distributed dashboard.
+- **Currently Learning:** Procedural motion logic to reduce cognitive load in dense data views.
+- **Current Research:** [Offline-First Consistency Models](./research/01_offline_consistency.md).
 
 ---
 
-### // Reach Out
-- [irsydfchrynto@gmail.com](mailto:irsydfchrynto@gmail.com)
-- [Portfolio](https://irsyad-architect.surge.sh)
-- [WhatsApp](https://wa.me/6285865826621)
+### // ACCESS_POINTS
+- [NOW.md](./NOW.md) - Monthly status update.
+- [/research](./research) - Engineering notebooks and experiments.
+- [Portfolio](https://irsyad-architect.surge.sh) - Visual deployment log.
+- [Email](mailto:irsydfchrynto@gmail.com) - Correspondence.
 
 ---
 <div align="center">
-  <sub>Muhammad Irsyad Fachryanto // 2026 // No decoration. Only engineering.</sub>
+  <sub>M. IRSYAD FACHRYANTO // PUBLIC_ENGINEERING_OS_V1.0 // 2026</sub>
 </div>

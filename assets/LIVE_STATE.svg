@@ -1,0 +1,31 @@
+<svg fill="none" viewBox="0 0 800 200" width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="200" fill="#000" rx="4" stroke="#111"/>
+  
+  <g transform="translate(40, 40)" font-family="ui-monospace, monospace">
+    <text x="0" y="0" fill="#666" font-size="10" font-weight="700">LIVE_ENGINEERING_STATE</text>
+    
+    <g transform="translate(0, 30)">
+      <text x="0" y="0" fill="#333" font-size="8">FOCUS</text>
+      <text x="0" y="15" fill="#fff" font-size="12">Android Native Security Interop</text>
+      <rect x="0" y="25" width="200" height="1" fill="#1a1a1a"/>
+    </g>
+    
+    <g transform="translate(240, 30)">
+      <text x="0" y="0" fill="#333" font-size="8">RESEARCH</text>
+      <text x="0" y="15" fill="#fff" font-size="12">Offline-First Consistency</text>
+      <rect x="0" y="25" width="200" height="1" fill="#1a1a1a"/>
+    </g>
+    
+    <g transform="translate(480, 30)">
+      <text x="0" y="0" fill="#333" font-size="8">BOTTLENECK</text>
+      <text x="0" y="15" fill="#f43f5e" font-size="12">Firestore Composite Index Latency</text>
+      <rect x="0" y="25" width="200" height="1" fill="#1a1a1a"/>
+    </g>
+    
+    <g transform="translate(0, 90)">
+      <text x="0" y="0" fill="#333" font-size="8">EXPERIMENT</text>
+      <text x="0" y="15" fill="#fff" font-size="12">Procedural Motion for Data Dashboards</text>
+      <rect x="0" y="25" width="200" height="1" fill="#1a1a1a"/>
+    </g>
+  </g>
+</svg>
