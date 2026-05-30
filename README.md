@@ -5,9 +5,8 @@
 </div>
 
 <div align="center">
-  <img src="https://irsyad-architect.surge.sh/avatar.jpg" width="160" height="240" style="border-radius: 4px; border: 3px solid #f43f5e; box-shadow: 12px 12px 0px rgba(244, 63, 94, 0.15);" />
-  <br />
-  <h3>Architecting Digital Experiences with 10/10 Precision</h3>
+ 
+  <h3>Architecting Digital Learning & Experiences </h3>
   
   <p>
     <b>Semester 6 D4 Teknik Informatika | IPK 3.92 / 4.00</b><br/>
