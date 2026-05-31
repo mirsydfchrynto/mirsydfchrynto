@@ -1,12 +1,11 @@
-name: Achievement God Mode V5.1 [Surgical Stability]
+name: Achievement God Mode
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 * * * *" # Runs every hour for maximum activity density
+    - cron: "0 * * * *"
 
 jobs:
-  # Sequential execution to avoid race conditions
   prestige-harvest:
     runs-on: ubuntu-latest
     permissions:
@@ -30,10 +29,7 @@ jobs:
           echo "Nexus-E Heartbeat: $(date)" >> HEARTBEAT.md
           echo "Pair session $(date)" >> PAIR_LOG.md
           git add HEARTBEAT.md PAIR_LOG.md
-          git commit -m "chore(prestige): architectural heartbeat & collaborative handshake
-          
-          Co-authored-by: SDA-Sentinel <sda@github.com>
-          Co-authored-by: Nexus-E <nexus@github.com>" || exit 0
+          git commit -m "chore(prestige): architectural heartbeat & collaborative handshake" -m "Co-authored-by: SDA-Sentinel <sda@github.com>" -m "Co-authored-by: Nexus-E <nexus@github.com>" || exit 0
           git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
