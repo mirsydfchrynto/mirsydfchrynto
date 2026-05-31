@@ -74,7 +74,7 @@ RUNTIME        : Caffeine Dependent Loop Enabled
 
 ### // ACHIEVEMENTS_DECODED
 <div align="center">
-  <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/achievements.svg" width="100%" />
+  <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/system_core.svg" width="100%" />
 </div>
 
 <div align="center">

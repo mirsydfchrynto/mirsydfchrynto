@@ -1,0 +1,59 @@
+<svg fill="none" viewBox="0 0 800 240" width="800" height="240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="240" fill="#020203" rx="4" stroke="#ffffff14" stroke-width="1"/>
+  
+  <style>
+    .header { fill: #0070f3; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: bold; letter-spacing: 2px; }
+    .label { fill: #ffffff70; font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase; }
+    .value { fill: #ffffff; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 700; }
+    .sub-value { fill: #0070f3; font-family: 'JetBrains Mono', monospace; font-size: 11px; }
+    .grid-line { stroke: #ffffff08; stroke-width: 1; }
+    .accent-bar { fill: #0070f3; }
+    @keyframes pulse { 0% { opacity: 0.4; } 50% { opacity: 1; } 100% { opacity: 0.4; } }
+    .alive { animation: pulse 2s infinite; }
+  </style>
+
+  <!-- Background Grid -->
+  <path d="M0 40 H800 M0 80 H800 M0 120 H800 M0 160 H800 M0 200 H800" class="grid-line"/>
+  <path d="M266 40 V240 M533 40 V240" class="grid-line"/>
+
+  <!-- Top Header -->
+  <rect width="800" height="40" fill="#ffffff05"/>
+  <text x="20" y="25" class="header">SYSTEM_CORE_V6.1 // ARCHITECTURAL_INTEGRITY_VERIFIED</text>
+  <circle cx="770" cy="20" r="4" class="accent-bar alive"/>
+
+  <!-- Column 1: Core Engines -->
+  <g transform="translate(20, 60)">
+    <text x="0" y="0" class="label">Primary Engines</text>
+    <text x="0" y="25" class="value">Flutter / Kotlin Native</text>
+    <text x="0" y="45" class="sub-value">Surgical Hardware Control</text>
+    
+    <text x="0" y="80" class="label">Frontend Evolution</text>
+    <text x="0" y="105" class="value">Next.js 16 / React 19</text>
+    <text x="0" y="125" class="sub-value">Turbopack Optimized</text>
+  </g>
+
+  <!-- Column 2: Security & Integrity -->
+  <g transform="translate(286, 60)">
+    <text x="0" y="0" class="label">Security Protocols</text>
+    <text x="0" y="25" class="value">GPG Verified / AES-256</text>
+    <text x="0" y="45" class="sub-value">Encryption at Rest/Transit</text>
+    
+    <text x="0" y="80" class="label">Verification Logic</text>
+    <text x="0" y="105" class="value">180+ Unit/Widget Tests</text>
+    <text x="0" y="125" class="sub-value">100% Stability Compliance</text>
+  </g>
+
+  <!-- Column 3: Operational Vitals -->
+  <g transform="translate(553, 60)">
+    <text x="0" y="0" class="label">Performance Index</text>
+    <text x="0" y="25" class="value">GPA 3.92 / 4.00</text>
+    <text x="0" y="45" class="sub-value">Academic Excellence Rank</text>
+    
+    <text x="0" y="80" class="label">System Uptime</text>
+    <text x="0" y="105" class="value">Persistent Loop</text>
+    <text x="0" y="125" class="sub-value">Caffeine.exe Running...</text>
+  </g>
+
+  <!-- Bottom Accent -->
+  <rect x="0" y="238" width="800" height="2" class="accent-bar"/>
+</svg>
