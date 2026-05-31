@@ -72,6 +72,16 @@ RUNTIME        : Caffeine Dependent Loop Enabled
   <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/output/github-contribution-grid-snake-dark.svg" width="100%" />
 </div>
 
+### // ACHIEVEMENTS_DECODED
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=mirsydfchrynto&theme=darkhub&no-bg=true&column=7" width="100%" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=mirsydfchrynto&show_icons=true&theme=dark&hide_border=true&bg_color=00000000" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mirsydfchrynto&layout=compact&theme=dark&hide_border=true&bg_color=00000000" width="48%" />
+</div>
+
 ---
 
 ### // ACCESS_TERMINAL
