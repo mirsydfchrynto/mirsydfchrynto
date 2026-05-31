@@ -10,17 +10,17 @@
 
   <!-- Terminal Content -->
   <g font-family="monospace" font-size="14">
-    <text x="20" y="60" fill="#f43f5e">> system_check --status</text>
+    <text x="20" y="60" fill="#0070f3">> system_check --status</text>
     <text x="20" y="85" fill="#c9d1d9"> [LOAD] Initializing Mobile Core...</text>
     <text x="20" y="110" fill="#27c93f"> [OK] Flutter Framework (Optimized)</text>
     <text x="20" y="135" fill="#27c93f"> [OK] Software Architecture (Standard: SOLID)</text>
     <text x="20" y="160" fill="#27c93f"> [OK] Native Interop (Kotlin/Android)</text>
     
-    <text x="20" y="195" fill="#f43f5e">> uptime</text>
+    <text x="20" y="195" fill="#0070f3">> uptime</text>
     <text x="20" y="220" fill="#c9d1d9"> 21 years | 6 semesters | 3.92 GPA_SCORE</text>
     
     <!-- Cursor Animation -->
-    <rect x="360" y="205" width="10" height="20" fill="#f43f5e">
+    <rect x="360" y="205" width="10" height="20" fill="#0070f3">
       <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite" />
     </rect>
   </g>

@@ -13,9 +13,9 @@
     <text x="130" y="115">TTL: 5S</text>
     <text x="400" y="100" fill="#fff">HANDSHAKE_LOGIC</text>
     <text x="400" y="115">DRIFT_COMPENSATION</text>
-    <text x="670" y="100" fill="#f43f5e">LOCK_TASK_INIT</text>
+    <text x="670" y="100" fill="#0070f3">LOCK_TASK_INIT</text>
     <text x="670" y="115">FLAG_SECURE</text>
   </g>
-  <path d="M210 120 L320 120" stroke="#f43f5e" stroke-dasharray="4 4"/>
-  <path d="M480 120 L590 120" stroke="#f43f5e" stroke-dasharray="4 4"/>
+  <path d="M210 120 L320 120" stroke="#0070f3" stroke-dasharray="4 4"/>
+  <path d="M480 120 L590 120" stroke="#0070f3" stroke-dasharray="4 4"/>
 </svg>

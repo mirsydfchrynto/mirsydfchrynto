@@ -18,7 +18,7 @@
     
     <g transform="translate(480, 30)">
       <text x="0" y="0" fill="#333" font-size="8">BOTTLENECK</text>
-      <text x="0" y="15" fill="#f43f5e" font-size="12">Firestore Composite Index Latency</text>
+      <text x="0" y="15" fill="#0070f3" font-size="12">Firestore Composite Index Latency</text>
       <rect x="0" y="25" width="200" height="1" fill="#1a1a1a"/>
     </g>
     

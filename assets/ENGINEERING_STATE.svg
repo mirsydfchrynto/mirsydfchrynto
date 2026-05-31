@@ -8,7 +8,7 @@
     </g>
     <g transform="translate(250, 25)">
       <text y="0" fill="#333" font-size="7">BOTTLENECK</text>
-      <text y="15" fill="#f43f5e" font-size="11">Firestore Composite Index Propagation</text>
+      <text y="15" fill="#0070f3" font-size="11">Firestore Composite Index Propagation</text>
     </g>
     <g transform="translate(550, 25)">
       <text y="0" fill="#333" font-size="7">ACTIVE_BUILD</text>

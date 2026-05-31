@@ -9,8 +9,8 @@
     <text x="400" y="205" fill="#fff" font-size="14" font-weight="700">M. IRSYAD</text>
     
     <g transform="translate(400, 100)">
-      <rect x="-60" y="-10" width="120" height="20" fill="#000" stroke="#f43f5e"/>
-      <text y="4" fill="#f43f5e" font-size="10">MOBILE_SECURITY</text>
+      <rect x="-60" y="-10" width="120" height="20" fill="#000" stroke="#0070f3"/>
+      <text y="4" fill="#0070f3" font-size="10">MOBILE_SECURITY</text>
     </g>
     
     <g transform="translate(550, 200)">
@@ -28,5 +28,5 @@
       <text y="4" fill="#fff" font-size="10">NATIVE_INTEROP</text>
     </g>
   </g>
-  <path d="M400 110 L400 150 M540 200 L500 200 M400 290 L400 250 M260 200 L300 200" stroke="#f43f5e" stroke-width="1"/>
+  <path d="M400 110 L400 150 M540 200 L500 200 M400 290 L400 250 M260 200 L300 200" stroke="#0070f3" stroke-width="1"/>
 </svg>

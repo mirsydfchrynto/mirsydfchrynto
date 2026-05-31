@@ -2,7 +2,7 @@
   <rect width="800" height="400" fill="#000" rx="4" stroke="#111"/>
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#f43f5e" />
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0070f3" />
     </marker>
   </defs>
 
@@ -18,8 +18,8 @@
     <rect x="440" y="20" width="120" height="60" rx="2" stroke="#333" fill="#050505"/>
     <text x="500" y="55" text-anchor="middle" fill="#fff" font-size="10">KOTLIN_BRIDGE</text>
     
-    <rect x="220" y="140" width="340" height="180" rx="4" stroke="#f43f5e" stroke-dasharray="4 2" fill="#050505"/>
-    <text x="390" y="165" text-anchor="middle" fill="#f43f5e" font-size="11" font-weight="700">ANDROID_SECURITY_CONTROL</text>
+    <rect x="220" y="140" width="340" height="180" rx="4" stroke="#0070f3" stroke-dasharray="4 2" fill="#050505"/>
+    <text x="390" y="165" text-anchor="middle" fill="#0070f3" font-size="11" font-weight="700">ANDROID_SECURITY_CONTROL</text>
     
     <g transform="translate(240, 190)" font-size="9">
       <text x="0" y="0" fill="#666">startLockTask()</text>
@@ -32,9 +32,9 @@
       <text x="0" y="105" fill="#fff">Detects: Clock_Drift vs Server_Time</text>
     </g>
 
-    <path d="M120 50 L220 50" stroke="#f43f5e" marker-end="url(#arrow)"/>
-    <path d="M340 50 L440 50" stroke="#f43f5e" marker-end="url(#arrow)"/>
-    <path d="M500 80 L500 140" stroke="#f43f5e" marker-end="url(#arrow)">
+    <path d="M120 50 L220 50" stroke="#0070f3" marker-end="url(#arrow)"/>
+    <path d="M340 50 L440 50" stroke="#0070f3" marker-end="url(#arrow)"/>
+    <path d="M500 80 L500 140" stroke="#0070f3" marker-end="url(#arrow)">
       <animate attributeName="stroke-dashoffset" from="0" to="20" dur="2s" repeatCount="indefinite" />
     </path>
   </g>

@@ -7,11 +7,11 @@
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#161b22" stroke-width="1"/>
     </pattern>
     <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f43f5e">
-        <animate attributeName="stop-color" values="#f43f5e;#fb7185;#f43f5e" dur="3s" repeatCount="indefinite" />
+      <stop offset="0%" stop-color="#0070f3">
+        <animate attributeName="stop-color" values="#0070f3;#fb7185;#0070f3" dur="3s" repeatCount="indefinite" />
       </stop>
       <stop offset="100%" stop-color="#fb7185">
-        <animate attributeName="stop-color" values="#fb7185;#f43f5e;#fb7185" dur="3s" repeatCount="indefinite" />
+        <animate attributeName="stop-color" values="#fb7185;#0070f3;#fb7185" dur="3s" repeatCount="indefinite" />
       </stop>
     </linearGradient>
   </defs>
@@ -19,7 +19,7 @@
   <rect width="800" height="200" fill="url(#grid)" />
   
   <!-- Scanning Line -->
-  <rect width="800" height="1" fill="#f43f5e" opacity="0.5">
+  <rect width="800" height="1" fill="#0070f3" opacity="0.5">
     <animate attributeName="y" values="0;200;0" dur="4s" repeatCount="indefinite" />
   </rect>
 
@@ -35,7 +35,7 @@
   </text>
 
   <!-- Animated Border -->
-  <rect x="10" y="10" width="780" height="180" rx="10" stroke="#f43f5e" stroke-width="1" stroke-dasharray="10,5">
+  <rect x="10" y="10" width="780" height="180" rx="10" stroke="#0070f3" stroke-width="1" stroke-dasharray="10,5">
     <animate attributeName="stroke-dashoffset" from="0" to="100" dur="10s" repeatCount="indefinite" />
   </rect>
 </svg>

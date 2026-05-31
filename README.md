@@ -74,7 +74,7 @@ RUNTIME        : Caffeine Dependent Loop Enabled
 
 ### // ACHIEVEMENTS_DECODED
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=mirsydfchrynto&theme=darkhub&no-bg=true&column=7" width="100%" />
+  <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/achievements.svg" width="100%" />
 </div>
 
 <div align="center">
@@ -93,5 +93,5 @@ RUNTIME        : Caffeine Dependent Loop Enabled
 
 <div align="center">
   <sub>© 2026 Muhammad Irsyad Fachryanto — Engineered for Stability</sub><br/>
-  <img src="https://komarev.com/ghpvc/?username=mirsydfchrynto&color=f43f5e&style=flat-square&label=VISITOR_LOG" />
+  <img src="https://komarev.com/ghpvc/?username=mirsydfchrynto&color=0070f3&style=flat-square&label=VISITOR_LOG" />
 </div>

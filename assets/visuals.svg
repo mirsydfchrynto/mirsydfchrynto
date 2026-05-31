@@ -3,17 +3,17 @@
   
   <g transform="translate(400, 150)">
     <!-- Central Node -->
-    <circle r="30" fill="#0d1117" stroke="#f43f5e" stroke-width="2">
+    <circle r="30" fill="#0d1117" stroke="#0070f3" stroke-width="2">
       <animate attributeName="r" values="30;35;30" dur="2s" repeatCount="indefinite" />
     </circle>
-    <text text-anchor="middle" y="5" font-family="monospace" font-size="10" fill="#f43f5e">CORE</text>
+    <text text-anchor="middle" y="5" font-family="monospace" font-size="10" fill="#0070f3">CORE</text>
 
     <!-- Satellite Nodes with "3D" rotation -->
     <g>
       <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite" />
       
       <line x1="0" y1="0" x2="120" y2="0" stroke="#30363d" stroke-dasharray="5,5" />
-      <circle cx="120" cy="0" r="15" fill="#0d1117" stroke="#f43f5e" stroke-width="2" />
+      <circle cx="120" cy="0" r="15" fill="#0d1117" stroke="#0070f3" stroke-width="2" />
       <text x="120" y="-20" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">FLUTTER</text>
     </g>
 
@@ -21,7 +21,7 @@
       <animateTransform attributeName="transform" type="rotate" from="120" to="480" dur="10s" repeatCount="indefinite" />
       
       <line x1="0" y1="0" x2="120" y2="0" stroke="#30363d" stroke-dasharray="5,5" />
-      <circle cx="120" cy="0" r="15" fill="#0d1117" stroke="#f43f5e" stroke-width="2" />
+      <circle cx="120" cy="0" r="15" fill="#0d1117" stroke="#0070f3" stroke-width="2" />
       <text x="120" y="-20" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">ARCH</text>
     </g>
 
@@ -29,18 +29,18 @@
       <animateTransform attributeName="transform" type="rotate" from="240" to="600" dur="10s" repeatCount="indefinite" />
       
       <line x1="0" y1="0" x2="120" y2="0" stroke="#30363d" stroke-dasharray="5,5" />
-      <circle cx="120" cy="0" r="15" fill="#0d1117" stroke="#f43f5e" stroke-width="2" />
+      <circle cx="120" cy="0" r="15" fill="#0d1117" stroke="#0070f3" stroke-width="2" />
       <text x="120" y="-20" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">SYSTEMS</text>
     </g>
   </g>
 
   <!-- Animated Pulse Rings -->
   <g transform="translate(400, 150)">
-    <circle r="0" stroke="#f43f5e" stroke-width="1" opacity="0.5">
+    <circle r="0" stroke="#0070f3" stroke-width="1" opacity="0.5">
       <animate attributeName="r" from="30" to="150" dur="3s" repeatCount="indefinite" />
       <animate attributeName="opacity" from="0.5" to="0" dur="3s" repeatCount="indefinite" />
     </circle>
-    <circle r="0" stroke="#f43f5e" stroke-width="1" opacity="0.5">
+    <circle r="0" stroke="#0070f3" stroke-width="1" opacity="0.5">
       <animate attributeName="r" from="30" to="150" dur="3s" begin="1.5s" repeatCount="indefinite" />
       <animate attributeName="opacity" from="0.5" to="0" dur="3s" begin="1.5s" repeatCount="indefinite" />
     </circle>

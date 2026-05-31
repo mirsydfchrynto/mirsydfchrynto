@@ -5,7 +5,7 @@
       stroke: #30363d;
     }
     .header-text {
-      fill: #f43f5e;
+      fill: #0070f3;
       font-family: sans-serif;
       font-weight: bold;
       font-size: 14px;
@@ -19,7 +19,7 @@
       fill: #161b22;
     }
     .bar-fill {
-      fill: #f43f5e;
+      fill: #0070f3;
     }
     .badge-bg {
       fill: #238636;

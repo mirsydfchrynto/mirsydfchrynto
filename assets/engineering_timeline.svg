@@ -22,15 +22,15 @@
       <text y="-20" text-anchor="middle" fill="#444">SOLID / BLoC</text>
     </g>
     <g transform="translate(470, 100)">
-      <circle r="4" fill="#f43f5e"/>
+      <circle r="4" fill="#0070f3"/>
       <text y="-50" text-anchor="middle" fill="#fff">2024</text>
-      <text y="-35" text-anchor="middle" fill="#f43f5e">PRODUCTION</text>
+      <text y="-35" text-anchor="middle" fill="#0070f3">PRODUCTION</text>
       <text y="-20" text-anchor="middle" fill="#444">OKEY BIMBEL</text>
     </g>
     <g transform="translate(610, 100)">
-      <circle r="4" fill="#f43f5e"/>
+      <circle r="4" fill="#0070f3"/>
       <text y="-50" text-anchor="middle" fill="#fff">2025</text>
-      <text y="-35" text-anchor="middle" fill="#f43f5e">KIOSK MODE</text>
+      <text y="-35" text-anchor="middle" fill="#0070f3">KIOSK MODE</text>
       <text y="-20" text-anchor="middle" fill="#444">NATIVE INTEROP</text>
     </g>
     <g transform="translate(750, 100)">

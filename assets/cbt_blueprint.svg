@@ -17,14 +17,14 @@
     <text x="400" y="100" text-anchor="middle" fill="#fff">VALIDATE SCAN</text>
     <text x="400" y="115" text-anchor="middle">CHECK: CLOCK_DRIFT</text>
     
-    <text x="670" y="100" text-anchor="middle" fill="#f43f5e">LOCK_TASK_INIT</text>
+    <text x="670" y="100" text-anchor="middle" fill="#0070f3">LOCK_TASK_INIT</text>
     <text x="670" y="115" text-anchor="middle">SECURE_WINDOW</text>
   </g>
   
-  <path d="M210 120 L320 120" stroke="#f43f5e" stroke-dasharray="4 4">
+  <path d="M210 120 L320 120" stroke="#0070f3" stroke-dasharray="4 4">
     <animate attributeName="stroke-dashoffset" from="0" to="20" dur="2s" repeatCount="indefinite" />
   </path>
-  <path d="M480 120 L590 120" stroke="#f43f5e" stroke-dasharray="4 4">
+  <path d="M480 120 L590 120" stroke="#0070f3" stroke-dasharray="4 4">
     <animate attributeName="stroke-dashoffset" from="0" to="20" dur="2s" repeatCount="indefinite" />
   </path>
 </svg>

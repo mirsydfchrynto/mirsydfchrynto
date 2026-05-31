@@ -16,9 +16,9 @@
       100% { content: "01001001"; }
     }
     .code-text { fill: #8b949e; font-family: 'Courier New', monospace; font-size: 12px; }
-    .cmd { fill: #f43f5e; font-weight: bold; }
+    .cmd { fill: #0070f3; font-weight: bold; }
     .output { fill: #c9d1d9; }
-    .cursor { fill: #f43f5e; animation: blink 1s infinite; }
+    .cursor { fill: #0070f3; animation: blink 1s infinite; }
     .binary-stream { fill: #161b22; font-family: monospace; font-size: 10px; }
     .window-dot { r: 5; }
   </style>
@@ -45,9 +45,9 @@
     
     <text y="115" class="code-text"><tspan class="cmd"># fetch --vibe</tspan></text>
     <rect x="0" y="125" width="200" height="40" fill="#161b22" rx="4" stroke="#30363d"/>
-    <text x="10" y="142" class="code-text" fill="#f43f5e">Status:</text>
+    <text x="10" y="142" class="code-text" fill="#0070f3">Status:</text>
     <text x="70" y="142" class="code-text output">Hungry for Innovation</text>
-    <text x="10" y="157" class="code-text" fill="#f43f5e">Mood:</text>
+    <text x="10" y="157" class="code-text" fill="#0070f3">Mood:</text>
     <text x="70" y="157" class="code-text output">Coffee -> Code Pipeline Active</text>
     
     <text y="185" class="code-text"><tspan class="cmd"># tail -f /var/log/dreams</tspan></text>
@@ -57,11 +57,11 @@
 
   <!-- Visual Informatics Decor (Playful Logic Gates) -->
   <g transform="translate(600, 80)" stroke="#30363d" fill="none">
-    <path d="M0,0 h30 q10,0 10,20 t10,20 h30" stroke="#f43f5e">
+    <path d="M0,0 h30 q10,0 10,20 t10,20 h30" stroke="#0070f3">
       <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="2s" repeatCount="indefinite" />
     </path>
-    <circle cx="85" cy="40" r="15" stroke="#f43f5e" fill="#161b22"/>
-    <text x="85" y="44" text-anchor="middle" fill="#f43f5e" font-size="10" font-family="monospace">AND</text>
+    <circle cx="85" cy="40" r="15" stroke="#0070f3" fill="#161b22"/>
+    <text x="85" y="44" text-anchor="middle" fill="#0070f3" font-size="10" font-family="monospace">AND</text>
     <text x="60" y="-10" class="code-text" font-size="9">LOGIC_GATE_01</text>
   </g>
 </svg>

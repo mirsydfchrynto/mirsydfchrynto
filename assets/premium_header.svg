@@ -7,7 +7,7 @@
   </defs>
   <rect width="800" height="300" fill="url(#grid)" />
   <g opacity="0.4">
-    <circle cx="200" cy="150" r="100" fill="#f43f5e" filter="blur(80px)">
+    <circle cx="200" cy="150" r="100" fill="#0070f3" filter="blur(80px)">
       <animate attributeName="cx" values="200;600;200" dur="20s" repeatCount="indefinite" />
     </circle>
     <circle cx="600" cy="150" r="80" fill="#3b82f6" filter="blur(80px)">

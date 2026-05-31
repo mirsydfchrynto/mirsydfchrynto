@@ -3,7 +3,7 @@
   <text x="0" y="40" font-family="ui-monospace, monospace" font-size="32" font-weight="700" fill="#fff" letter-spacing="-0.02em">M. IRSYAD FACHRYANTO</text>
   <text x="0" y="75" font-family="ui-monospace, monospace" font-size="14" fill="#666">DEVELOPER / RESEARCHER / SEMESTER 6</text>
   <rect x="0" y="100" width="800" height="1" fill="#111"/>
-  <rect x="0" y="100" width="400" height="1" fill="#f43f5e">
+  <rect x="0" y="100" width="400" height="1" fill="#0070f3">
     <animate attributeName="width" values="0;800;400" dur="3s" fill="freeze" />
   </rect>
 </svg>
