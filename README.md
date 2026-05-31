@@ -48,6 +48,27 @@ RUNTIME        : Caffeine Dependent Loop Enabled
 
 ---
 
+### // COLLABORATIVE_UNITS
+<div align="center">
+  <table>
+    <tr>
+      <td width="50%" align="center">
+        <b>ARCHITECT-ELITE / NEXUS-E</b><br/>
+        <sub>High-Integrity Engineering Group</sub>
+      </td>
+      <td width="50%" align="center">
+        <b>CAPSTONE PARTNER</b><br/>
+        <a href="https://github.com/marshadwi">
+          <img src="https://github.com/marshadwi.png" width="40" style="border-radius: 50%;" /><br/>
+          <sub>Marsha Dwi Lucyana (@marshadwi)</sub>
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
 ### // OPERATIONAL_VITAL_SIGNS
 <div align="center">
   <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/system_vitals.svg" width="100%" />
