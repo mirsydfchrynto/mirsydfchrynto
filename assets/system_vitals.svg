@@ -1,0 +1,78 @@
+
+<svg width="800" height="200" viewBox="0 0 800 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes grow { from { width: 0; } }
+    .text { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; fill: #ffffff; }
+    .label { font-size: 11px; opacity: 0.6; }
+    .sub { font-size: 9px; opacity: 0.4; }
+    .value-text { font-size: 12px; font-weight: bold; }
+  </style>
+  
+  <rect width="800" height="200" fill="#0d1117" rx="8" stroke="#30363d"/>
+  
+  
+    <g transform="translate(40, 40)">
+      <text x="0" y="0" class="text label">ENERGY CORE</text>
+      <text x="720" y="0" class="text sub" text-anchor="end">CAFFEINE_OVERLOAD</text>
+      
+      <!-- Progress Bar Background -->
+      <rect x="0" y="8" width="720" height="6" fill="#161b22" rx="3"/>
+      
+      <!-- Progress Bar Foreground -->
+      <rect x="0" y="8" width="720" height="6" fill="#00F0FF" rx="3">
+        <animate attributeName="width" from="0" to="720" dur="1.5s" fill="freeze" />
+      </rect>
+      
+      <!-- Glow effect -->
+      <rect x="0" y="8" width="720" height="6" fill="#00F0FF" rx="3" opacity="0.3" style="filter: blur(2px);"/>
+    </g>
+  
+    <g transform="translate(40, 80)">
+      <text x="0" y="0" class="text label">SLEEP CYCLES</text>
+      <text x="720" y="0" class="text sub" text-anchor="end">SYSTEM_DEBT</text>
+      
+      <!-- Progress Bar Background -->
+      <rect x="0" y="8" width="720" height="6" fill="#161b22" rx="3"/>
+      
+      <!-- Progress Bar Foreground -->
+      <rect x="0" y="8" width="72" height="6" fill="#FF0055" rx="3">
+        <animate attributeName="width" from="0" to="72" dur="1.5s" fill="freeze" />
+      </rect>
+      
+      <!-- Glow effect -->
+      <rect x="0" y="8" width="72" height="6" fill="#FF0055" rx="3" opacity="0.3" style="filter: blur(2px);"/>
+    </g>
+  
+    <g transform="translate(40, 120)">
+      <text x="0" y="0" class="text label">STRESS LOAD</text>
+      <text x="720" y="0" class="text sub" text-anchor="end">DEBUGGING_STABLE</text>
+      
+      <!-- Progress Bar Background -->
+      <rect x="0" y="8" width="720" height="6" fill="#161b22" rx="3"/>
+      
+      <!-- Progress Bar Foreground -->
+      <rect x="0" y="8" width="360" height="6" fill="#FFCC00" rx="3">
+        <animate attributeName="width" from="0" to="360" dur="1.5s" fill="freeze" />
+      </rect>
+      
+      <!-- Glow effect -->
+      <rect x="0" y="8" width="360" height="6" fill="#FFCC00" rx="3" opacity="0.3" style="filter: blur(2px);"/>
+    </g>
+  
+    <g transform="translate(40, 160)">
+      <text x="0" y="0" class="text label">PRODUCTIVITY</text>
+      <text x="720" y="0" class="text sub" text-anchor="end">OPTIMIZED</text>
+      
+      <!-- Progress Bar Background -->
+      <rect x="0" y="8" width="720" height="6" fill="#161b22" rx="3"/>
+      
+      <!-- Progress Bar Foreground -->
+      <rect x="0" y="8" width="648" height="6" fill="#00FF41" rx="3">
+        <animate attributeName="width" from="0" to="648" dur="1.5s" fill="freeze" />
+      </rect>
+      
+      <!-- Glow effect -->
+      <rect x="0" y="8" width="648" height="6" fill="#00FF41" rx="3" opacity="0.3" style="filter: blur(2px);"/>
+    </g>
+  
+</svg>

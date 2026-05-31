@@ -48,25 +48,26 @@ RUNTIME        : Caffeine Dependent Loop Enabled
 
 ---
 
-### // OPERATIONAL_VITAL_SIGNS
-<div align="center">
-  <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/system_vitals.svg" width="100%" />
-</div>
-
----
-
-### // DEPLOYMENT_LOGS
-```bash
-[INFO]    Initializing academic state: 3.92 GPA detected.
-[DEBUG]   Searching for social life exe... Error: Module not found.
-[SUCCESS] Fixed 1 bug. 42 new bugs automatically joined the party.
-[WARN]    Clock drift detected: 3 AM coding session out of sync with reality.
-[INFO]    sudo rm -rf /procrastination --no-preserve-root
+### OPERATIONAL VITAL SIGNS
+```text
+[ ENERGY LEVEL ] [||||||||||||||||||||] 100% (CAFFEINE OVERLOAD)
+[ SLEEP CYCLES ] [||                  ] 10%  (SYSTEM DEBT)
+[ STRESS LOAD  ] [||||||||||          ] 50%  (DEBUGGING STABLE)
+[ PRODUCTIVITY ] [||||||||||||||||||  ] 90%  (OPTIMIZED)
 ```
 
 ---
 
-### // CONTRIBUTION_SNAKE_MATRIX
+### DEPLOYMENT LOGS
+- `[INFO]` Initializing academic state: 3.92 GPA detected.
+- `[DEBUG]` Searching for social life exe... Error: Module not found.
+- `[SUCCESS]` Berhasil memperbaiki 1 bug. 42 bug baru otomatis bergabung ke party.
+- `[WARN]` Clock drift terdeteksi: Sesi coding jam 3 pagi tidak sinkron dengan realita.
+- `[INFO]` sudo rm -rf /procrastination --no-preserve-root
+
+---
+
+### CONTRIBUTION SNAKE MATRIX
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/output/github-contribution-grid-snake-dark.svg" width="100%" />
@@ -74,10 +75,13 @@ RUNTIME        : Caffeine Dependent Loop Enabled
 
 ---
 
-### // ACCESS_TERMINAL
-<div align="center">
-  <img src="https://raw.githubusercontent.com/mirsydfchrynto/mirsydfchrynto/main/assets/access_terminal.svg" width="100%" />
-</div>
+### ACCESS TERMINAL
+```bash
+# Handshake with the architect
+$ curl -X GET https://irsyad-architect.surge.sh
+$ mailto:irsydfchrynto@gmail.com
+$ git commit -m "feat: building future systems"
+```
 
 ---
 
