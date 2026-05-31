@@ -92,6 +92,6 @@ RUNTIME        : Caffeine Dependent Loop Enabled
 ---
 
 <div align="center">
-  <sub>© 2026 Muhammad Irsyad Fachryanto — Engineered for Stability</sub><br/>
+  <sub>© 2026 M. Irsyad Fachryanto</sub><br/>
   <img src="https://komarev.com/ghpvc/?username=mirsydfchrynto&color=0070f3&style=flat-square&label=VISITOR_LOG" />
 </div>
