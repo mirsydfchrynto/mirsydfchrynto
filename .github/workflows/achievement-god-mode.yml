@@ -1,4 +1,4 @@
-name: Achievement God Mode V5.0 [High-Integrity]
+name: Achievement God Mode V5.1 [Surgical Stability]
 
 on:
   workflow_dispatch:
@@ -6,37 +6,41 @@ on:
     - cron: "0 * * * *" # Runs every hour for maximum activity density
 
 jobs:
-  daily-streak-farm:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@v4
-      - name: Commit for Daily Streak
-        run: |
-          git config --global user.name "mirsydfchrynto"
-          git config --global user.email "irsydfchrynto@gmail.com"
-          git pull --rebase origin main
-          echo "Nexus-E Heartbeat: $(date)" >> HEARTBEAT.md
-          git add HEARTBEAT.md
-          git commit -m "chore(telemetry): system heartbeat $(date +%s)" || exit 0
-          git push origin main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  mass-pull-shark-yolo:
+  # Sequential execution to avoid race conditions
+  prestige-harvest:
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
+      discussions: write
+      issues: write
     steps:
       - uses: actions/checkout@v4
-      - name: High-Density PR Farming
+        with:
+          fetch-depth: 0
+
+      - name: Setup Identity
         run: |
-          git config --global user.name "SDA-Sentinel"
-          git config --global user.email "sda@github.com"
-          # Only create 10 PRs per hour to avoid race conditions and excessive noise
-          for i in {1..10}
+          git config --global user.name "mirsydfchrynto"
+          git config --global user.email "irsydfchrynto@gmail.com"
+
+      - name: Part 1: Daily Streak & Pair Extraordinaire
+        run: |
+          git pull --rebase origin main
+          echo "Nexus-E Heartbeat: $(date)" >> HEARTBEAT.md
+          echo "Pair session $(date)" >> PAIR_LOG.md
+          git add HEARTBEAT.md PAIR_LOG.md
+          git commit -m "chore(prestige): architectural heartbeat & collaborative handshake
+          
+          Co-authored-by: SDA-Sentinel <sda@github.com>
+          Co-authored-by: Nexus-E <nexus@github.com>" || exit 0
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Part 2: High-Density PR Farming (YOLO/Pull Shark)
+        run: |
+          for i in {1..5}
           do
             git pull --rebase origin main
             BRANCH="achieve/perpetual-$i-$(date +%s)"
@@ -48,68 +52,32 @@ jobs:
             PR_URL=$(gh pr create --title "System Sync $i" --body "Perpetual harvest cycle." --head $BRANCH)
             gh pr merge $PR_URL --merge --delete-branch
             git checkout main
-            sleep 5
+            sleep 2
           done
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  galaxy-brain-evolution:
-    runs-on: ubuntu-latest
-    permissions:
-      discussions: write
-    steps:
-      - uses: actions/checkout@v4 # Ensure git context is available
-      - name: Discussion Solving
+      - name: Part 3: Galaxy Brain Evolution (Discussions)
         run: |
           REPO_ID=$(gh api graphql -f query='query { repository(owner: "mirsydfchrynto", name: "mirsydfchrynto") { id } }' --template '{{.data.repository.id}}')
-          CATEGORY_ID="DIC_kwDOSseEDc4C-LaH" # Fixed Q&A ID for mirsydfchrynto/mirsydfchrynto
-          
-          # 3 discussions per hour to reach Gold safely
+          CATEGORY_ID="DIC_kwDOSseEDc4C-LaH"
           for i in {1..3}
           do
             DISCUSSION_ID=$(gh api graphql -f query='mutation($repo:ID!, $category:ID!) { createDiscussion(input: {repositoryId: $repo, categoryId: $category, title: "Nexus-E Inquiry '"$i"' $(date +%s)", body: "Protocol efficiency check?"}) { discussion { id } } }' -f repo="$REPO_ID" -f category="$CATEGORY_ID" --template '{{.data.createDiscussion.discussion.id}}')
-            COMMENT_ID=$(gh api graphql -f query='mutation($id:ID!) { addDiscussionComment(input: {discussionId: $id, body: "Optimized via V5.0 perpetual engine."}) { comment { id } } }' -f id="$DISCUSSION_ID" --template '{{.data.addDiscussionComment.comment.id}}')
+            COMMENT_ID=$(gh api graphql -f query='mutation($id:ID!) { addDiscussionComment(input: {discussionId: $id, body: "Optimized via V5.1 surgical engine."}) { comment { id } } }' -f id="$DISCUSSION_ID" --template '{{.data.addDiscussionComment.comment.id}}')
             gh api graphql -f query='mutation($id:ID!) { markDiscussionCommentAsAnswer(input: {id: $id}) { discussion { id } } }' -f id="$COMMENT_ID"
             sleep 5
           done
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  pair-extraordinaire-god:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@v4
-      - name: Multi-Identity Commitment
-        run: |
-          git config --global user.name "mirsydfchrynto"
-          git config --global user.email "irsydfchrynto@gmail.com"
-          git pull --rebase origin main
-          echo "Pair session $(date)" >> PAIR_LOG.md
-          git add PAIR_LOG.md
-          git commit -m "feat: multi-agent collaborative update
-          
-          Co-authored-by: SDA-Sentinel <sda@github.com>
-          Co-authored-by: Architect-AI <architect@github.com>
-          Co-authored-by: Nexus-E <nexus@github.com>" || exit 0
-          git push origin main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  quickdraw-mass-trigger:
-    runs-on: ubuntu-latest
-    permissions:
-      issues: write
-    steps:
-      - uses: actions/checkout@v4 # Fix: gh needs git context for some metadata
-      - name: Rapid Issue Closure
+      - name: Part 4: Quickdraw & Issue Mastery
         run: |
           for i in {1..3}
           do
             ISSUE_NUM=$(gh issue create --title "Health Scan $i $(date +%s)" --body "Triggering Quickdraw.")
             gh issue close $ISSUE_NUM
-            sleep 2
+            sleep 1
           done
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
