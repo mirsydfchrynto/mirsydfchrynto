@@ -78,8 +78,8 @@ RUNTIME        : Caffeine Dependent Loop Enabled
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mirsydfchrynto&show_icons=true&theme=dark&hide_border=true" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mirsydfchrynto&layout=compact&theme=dark&hide_border=true" width="48%" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=mirsydfchrynto&show_icons=true&theme=dark&hide_border=true" width="48%" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=mirsydfchrynto&layout=compact&theme=dark&hide_border=true" width="48%" />
 </div>
 
 ---
