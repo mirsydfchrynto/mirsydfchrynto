@@ -10,16 +10,21 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+      discussions: write
+      issues: write
     steps:
       - uses: actions/checkout@v4
-      - name: Heartbeat
+      - name: Setup Identity
         run: |
           git config --global user.name "mirsydfchrynto"
           git config --global user.email "irsydfchrynto@gmail.com"
+      - name: Heartbeat
+        run: |
+          git pull --rebase origin main
           echo "$(date)" >> HEARTBEAT.md
           git add HEARTBEAT.md
           git commit -m "chore: heartbeat" || exit 0
-          git push
+          git push origin main
       - name: PR Farm
         run: |
           BRANCH="farm-$(date +%s)"
@@ -30,5 +35,20 @@ jobs:
           git push origin $BRANCH
           PR_URL=$(gh pr create --title "Farm" --body "Farm" --head $BRANCH)
           gh pr merge $PR_URL --merge --delete-branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Discussion Solve
+        run: |
+          REPO_ID=$(gh api graphql -f query='query { repository(owner: "mirsydfchrynto", name: "mirsydfchrynto") { id } }' --template '{{.data.repository.id}}')
+          CATEGORY_ID="DIC_kwDOSseEDc4C-LaH"
+          DISCUSSION_ID=$(gh api graphql -f query='mutation($repo:ID!, $category:ID!) { createDiscussion(input: {repositoryId: $repo, categoryId: $category, title: "Inquiry $(date +%s)", body: "Check"}) { discussion { id } } }' -f repo="$REPO_ID" -f category="$CATEGORY_ID" --template '{{.data.createDiscussion.discussion.id}}')
+          COMMENT_ID=$(gh api graphql -f query='mutation($id:ID!) { addDiscussionComment(input: {discussionId: $id, body: "Solved"}) { comment { id } } }' -f id="$DISCUSSION_ID" --template '{{.data.addDiscussionComment.comment.id}}')
+          gh api graphql -f query='mutation($id:ID!) { markDiscussionCommentAsAnswer(input: {id: $id}) { discussion { id } } }' -f id="$COMMENT_ID"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Issue Quickdraw
+        run: |
+          ISSUE_NUM=$(gh issue create --title "Health $(date +%s)" --body "Quickdraw")
+          gh issue close $ISSUE_NUM
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
