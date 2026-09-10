@@ -1,1 +1,0 @@
-Identity Verification Node: Active
